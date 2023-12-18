@@ -1,0 +1,277 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "1e0c79e9-7de0-4eee-b9c5-f27132635fb8": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "3f3ee0d5-7273-4d98-b261-fa9f30e98a4c": {
+          "type": "content_tabs",
+          "settings": {
+            "tabs_alignment": "left",
+            "tabs_content_alignment": "left",
+            "tab_one_show": true,
+            "tab_one_open_by_default": true,
+            "show_product_content": false,
+            "product_content_type": "all",
+            "tab_one_title": "Beskrivning",
+            "tab_one_content": "{{ product.metafields.custom.short_description_1 | metafield_tag }}",
+            "tab_one_page": "",
+            "tab_two_show": false,
+            "tab_two_open_by_default": false,
+            "tab_two_title": "",
+            "tab_two_content": "",
+            "tab_two_page": "",
+            "tab_three_show": false,
+            "tab_three_open_by_default": false,
+            "tab_three_title": "",
+            "tab_three_content": "",
+            "tab_three_page": "",
+            "tab_four_show": false,
+            "tab_four_open_by_default": false,
+            "tab_four_title": "",
+            "tab_four_content": "",
+            "tab_four_page": ""
+          }
+        },
+        "8effeb43-55b7-4ec4-ab9b-68bcd89b865b": {
+          "type": "price",
+          "settings": {
+            "show_price_extra_info": true
+          }
+        },
+        "1ad0121e-439d-45c0-b45d-4f080836ade5": {
+          "type": "text",
+          "settings": {
+            "text": "För att beställa och se priser måste ni först registrera er så kommer er konto godkännas inom 24 timmar. Webshop är för företag och personer som har dokumenterat utbildning inom område",
+            "text_style": "body",
+            "link_to_resource": "none"
+          }
+        },
+        "1e939cd6-0958-4135-a9e5-c50faef01437": {
+          "type": "variant_picker",
+          "settings": {
+            "title": "Variant picker",
+            "variant_picker_layout": "product-selector--default",
+            "variant_picker_type": "dropdowns",
+            "size_guide_page": ""
+          }
+        },
+        "1e939cd6-0955-4135-a9e5-c50faef01437": {
+          "type": "purchase_options",
+          "settings": {
+          }
+        },
+        "8604a6ff-ad0b-44dd-8068-1de4e062f8e8": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity": true,
+            "quantity_type": "inline",
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "e6d841d6-2f71-40b3-956a-912df13f9f6e": {
+          "type": "inventory_notice",
+          "settings": {
+            "inventory_threshold": 15,
+            "notice_just_text": false
+          }
+        },
+        "7be6b89c-da83-4ff2-9b85-44fb28cbfa27": {
+          "type": "pickup-availability",
+          "settings": {
+          }
+        },
+        "9d6b79cd-69fe-4ff9-838b-fda672477351": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "c8927b57-257c-4256-98ea-887462fdd0cd": {
+          "type": "content_tabs",
+          "settings": {
+            "tabs_alignment": "center",
+            "tabs_content_alignment": "left",
+            "tab_one_show": true,
+            "tab_one_open_by_default": true,
+            "show_product_content": true,
+            "product_content_type": "all",
+            "tab_one_title": "Beskrivning",
+            "tab_one_content": "<p>[description]<\/p>",
+            "tab_one_page": "",
+            "tab_two_show": true,
+            "tab_two_open_by_default": false,
+            "tab_two_title": "{{ product.metafields.custom.ingredients.value }}",
+            "tab_two_content": "<p>{{ product.metafields.custom.ingredients.value }}<\/p>{{ product.metafields.custom.egenskaper | metafield_tag }}",
+            "tab_two_page": "",
+            "tab_three_show": true,
+            "tab_three_open_by_default": false,
+            "tab_three_title": "{{ product.metafields.custom.title.value }}",
+            "tab_three_content": "{{ product.metafields.custom.startpaket | metafield_tag }}",
+            "tab_three_page": "",
+            "tab_four_show": false,
+            "tab_four_open_by_default": false,
+            "tab_four_title": "",
+            "tab_four_content": "",
+            "tab_four_page": ""
+          }
+        }
+      },
+      "block_order": [
+        "1e0c79e9-7de0-4eee-b9c5-f27132635fb8",
+        "3f3ee0d5-7273-4d98-b261-fa9f30e98a4c",
+        "8effeb43-55b7-4ec4-ab9b-68bcd89b865b",
+        "1ad0121e-439d-45c0-b45d-4f080836ade5",
+        "1e939cd6-0958-4135-a9e5-c50faef01437",
+        "1e939cd6-0955-4135-a9e5-c50faef01437",
+        "8604a6ff-ad0b-44dd-8068-1de4e062f8e8",
+        "e6d841d6-2f71-40b3-956a-912df13f9f6e",
+        "7be6b89c-da83-4ff2-9b85-44fb28cbfa27",
+        "9d6b79cd-69fe-4ff9-838b-fda672477351",
+        "c8927b57-257c-4256-98ea-887462fdd0cd"
+      ],
+      "settings": {
+        "section_width": "container",
+        "product_media_layout": "product__media-layout--full",
+        "slides_with_thumbs": "desktop_and_mobile",
+        "image_vertical_alignment": "center",
+        "product_media_object_fit": "cover",
+        "adaptive_ratio_and_auto_height": "slider_auto_height",
+        "slider_background_color_transparent": true,
+        "padding_vertical_desktop": "pt-0-desktop pb-0-desktop",
+        "padding_vertical_mobile": "pt-0-mobile pb-0-mobile",
+        "breadcrumbs_color_scheme_text": "text-colors-default",
+        "tags_color_scheme_text": "text-colors-default",
+        "arrows_color": "text-colors-default",
+        "show_tags_on_mobile": true,
+        "enable_actions_bar": true,
+        "horizontal_alignment": "text-left"
+      }
+    },
+    "977cac03-4044-4567-8907-fa55103a47eb": {
+      "type": "complete-the-set",
+      "blocks": {
+        "fec25a48-cc42-4f7d-bbf5-215567a945e9": {
+          "type": "popup-drawer",
+          "settings": {
+            "button_text": "Beskrivning",
+            "button_type": "drawer",
+            "button_url": "",
+            "drawer_richtext": "<p>[description]<\/p>",
+            "drawer_page": ""
+          }
+        },
+        "4f41f466-653b-4675-91c2-051a7830a3cc": {
+          "type": "popup-drawer",
+          "settings": {
+            "button_text": "{{ product.metafields.custom.ingredients.value }}",
+            "button_type": "drawer",
+            "button_url": "",
+            "drawer_richtext": "<p>{{ product.metafields.custom.egenskaper | metafield_tag }}<\/p>",
+            "drawer_page": ""
+          }
+        },
+        "ab4932da-0d31-4117-a170-3d12f59976ca": {
+          "type": "popup-drawer",
+          "settings": {
+            "button_text": "Contact us",
+            "button_type": "link",
+            "button_url": "shopify:\/\/pages\/contact-us",
+            "drawer_richtext": "",
+            "drawer_page": ""
+          }
+        },
+        "f9d768f7-b69b-4425-b3d7-33216740b2dd": {
+          "type": "popup-drawer",
+          "disabled": true,
+          "settings": {
+            "button_text": "Stylist tip",
+            "button_type": "drawer",
+            "button_url": "",
+            "drawer_richtext": "<p>Stylist tips can be entered here.<\/p>",
+            "drawer_page": ""
+          }
+        },
+        "94d964a1-0d79-4544-8288-24863da87e2d": {
+          "type": "popup-drawer",
+          "disabled": true,
+          "settings": {
+            "button_text": "Model Measurments",
+            "button_type": "link",
+            "button_url": "",
+            "drawer_richtext": "<p>Model measurements can be inserted here.<\/p>",
+            "drawer_page": ""
+          }
+        }
+      },
+      "block_order": [
+        "fec25a48-cc42-4f7d-bbf5-215567a945e9",
+        "4f41f466-653b-4675-91c2-051a7830a3cc",
+        "ab4932da-0d31-4117-a170-3d12f59976ca",
+        "f9d768f7-b69b-4425-b3d7-33216740b2dd",
+        "94d964a1-0d79-4544-8288-24863da87e2d"
+      ],
+      "disabled": true,
+      "settings": {
+        "padding_vertical_desktop": "pt-0-desktop pb-0-desktop",
+        "padding_vertical_mobile": "",
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-default",
+        "title": "Complete the set",
+        "content_type": "products",
+        "flip_desktop": false,
+        "flip_mobile": true
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "padding_vertical_desktop": "",
+        "padding_vertical_mobile": "",
+        "layout": "layout-1",
+        "gap_between_desktop": 2,
+        "gap_between_mobile": 2,
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-default",
+        "title": "Du kanske också gillar",
+        "max_products": 8,
+        "show_unavailable_products": false
+      }
+    },
+    "recently_viewed": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "padding_vertical_desktop": "pt-0-desktop",
+        "padding_vertical_mobile": "pt-0-mobile",
+        "layout": "layout-1",
+        "gap_between_desktop": 2,
+        "gap_between_mobile": 2,
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-default",
+        "title": "Recently viewed",
+        "button_text": "",
+        "button_url": "",
+        "button_style": "button--filled",
+        "max_products": 8,
+        "show_unavailable_products": false
+      }
+    },
+    "166904322806a89075": {
+      "type": "apps",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "977cac03-4044-4567-8907-fa55103a47eb",
+    "recommendations",
+    "recently_viewed",
+    "166904322806a89075"
+  ]
+}

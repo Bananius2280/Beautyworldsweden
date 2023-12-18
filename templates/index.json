@@ -1,0 +1,670 @@
+{
+  "sections": {
+    "1658995208ad05f95f": {
+      "type": "hero-banner",
+      "blocks": {
+        "8d591e0b-d408-44f1-8bd2-9b71f529aa90": {
+          "type": "slide",
+          "settings": {
+            "banner_layout": "hero-banner--30-70",
+            "color_scheme_text": "text-colors-default",
+            "color_scheme_background": "background-colors-secondary",
+            "header_menu_text_color": "#ffffff",
+            "image": "shopify:\/\/shop_images\/portrait-of-beautiful-woman-with-clear-skin-posing-with-leaf-and-copy-space.jpg",
+            "video_external": "",
+            "enable_media_overlay_desktop": true,
+            "video_external_mobile": "",
+            "enable_media_overlay_mobile": true,
+            "content_position_horizontal": "align-center text-center",
+            "content_position_vertical": "justify-end",
+            "subtitle": "",
+            "subtitle_url": "",
+            "title": "Beauty World Sweden",
+            "content": "<p>Webbutik för dig som arbetar inom skönhetsbranschen med kvalitetsprodukter för hudvård verktyg och tillbehör<\/p>",
+            "enable_vertical_line": true,
+            "button_style": "button--outlined",
+            "button_text": "Köp nu",
+            "button_url": "shopify:\/\/collections\/hudvard"
+          }
+        },
+        "e3867974-072c-4cfe-968e-a10d22e8941a": {
+          "type": "slide",
+          "settings": {
+            "banner_layout": "hero-banner--70-30",
+            "color_scheme_text": "text-colors-default",
+            "color_scheme_background": "background-colors-accent-2",
+            "header_menu_text_color": "#ffffff",
+            "image": "shopify:\/\/shop_images\/young-woman-having-a-facial-treatment.jpg",
+            "video_external": "",
+            "enable_media_overlay_desktop": true,
+            "video_external_mobile": "",
+            "enable_media_overlay_mobile": true,
+            "content_position_horizontal": "align-center text-center",
+            "content_position_vertical": "justify-center",
+            "subtitle": "",
+            "subtitle_url": "",
+            "title": "Bli en Beauty Master",
+            "content": "<p>Intensivutbildning för hudterapeuter med bästa praxis och innovativa tekniker!<\/p>",
+            "enable_vertical_line": true,
+            "button_style": "button--outlined",
+            "button_text": "Boka",
+            "button_url": "shopify:\/\/collections\/utbildning"
+          }
+        },
+        "8ff5c120-4c56-4512-92d9-7617774d3276": {
+          "type": "slide",
+          "settings": {
+            "banner_layout": "hero-banner--full",
+            "color_scheme_text": "text-colors-default",
+            "color_scheme_background": "background-colors-inverse",
+            "header_menu_text_color": "#111111",
+            "image": "shopify:\/\/shop_images\/matowy-pastelowy-kolor-na-bezu.jpg",
+            "video_external": "",
+            "enable_media_overlay_desktop": true,
+            "image_mobile": "shopify:\/\/shop_images\/foundation.jpg",
+            "video_external_mobile": "",
+            "enable_media_overlay_mobile": true,
+            "content_position_horizontal": "align-center text-center",
+            "content_position_vertical": "justify-end",
+            "subtitle": "",
+            "subtitle_url": "",
+            "title": "Webbutik för dig som arbetar inom skönhetsbranchen.",
+            "content": "",
+            "enable_vertical_line": true,
+            "button_style": "button--outlined",
+            "button_text": "Visa alla",
+            "button_url": "shopify:\/\/collections\/kroppsvard"
+          }
+        }
+      },
+      "block_order": [
+        "8d591e0b-d408-44f1-8bd2-9b71f529aa90",
+        "e3867974-072c-4cfe-968e-a10d22e8941a",
+        "8ff5c120-4c56-4512-92d9-7617774d3276"
+      ],
+      "settings": {
+        "slider_height": 100,
+        "slider_autoplay": true,
+        "slider_autoplay_interval": 5,
+        "slider_arrows": true,
+        "slider_arrows_position": "hero__swiper-buttons--sides",
+        "slider_arrows_color": "text-colors-inverse"
+      }
+    },
+    "9ef906c3-a2c0-4f65-9920-1daaba21009a": {
+      "type": "seo-content",
+      "settings": {
+        "padding_vertical_desktop": "",
+        "padding_vertical_mobile": "",
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-default",
+        "text_size": 1,
+        "title": "Välkommen till Beauty World Sweden!",
+        "content": "<p>Beauty World Sweden - webbutik för professionella utövare i Sverige. Att köpa professionell hudvård är ett effektivt sätt att bevara skönhet och ungdom i många år. När du vänder dig till Beauty World Sweden hittar du en webbutik för dig som arbetar inom skönhetsbranschen med kvalitetsprodukter för hudvård, verktyg och tillbehör. Utbudet omfattar allt som en professionell och en nybörjare kan behöva för att arbeta. Vi ger även möjlighet till certifierade utbildningar i vår akademi. Våra experter hjälper dig att ta första steget i din karriär inom något av områdena. Du behöver bara välja rätt kurs och börja utveckla dina yrkeskunskaper. För eventuella frågor, kontakta oss via whatsapp +46704825115 eller skicka ett mail till oss.<\/p>"
+      }
+    },
+    "16e24524-2040-41a4-b5ca-3a425d62879b": {
+      "type": "featured-collections",
+      "blocks": {
+        "8e756427-f886-410c-b65a-f8a1f0767ff1": {
+          "type": "collection-slide",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "kosmetisk-pigmentering",
+            "image": "shopify:\/\/shop_images\/beauty-stylist-making-permanent.jpg",
+            "title": ""
+          }
+        },
+        "0502c0ed-6d29-4e80-9d4d-bef13b8c626f": {
+          "type": "collection-slide",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "hudvard",
+            "image": "shopify:\/\/shop_images\/portrait-of-beautiful-black-woman-with-mysterious-shadows.jpg",
+            "title": ""
+          }
+        },
+        "8410b9c7-f0ae-4be3-8e77-8d3411d02273": {
+          "type": "collection-slide",
+          "settings": {
+            "color_scheme_text": "text-colors-inverse",
+            "collection": "utbildning",
+            "image": "shopify:\/\/shop_images\/beautiful-portrait-of-half-naked-elegant-woman-with-dark-hair-in-bun-putting-head-aside-isolated-over-black.jpg",
+            "title": "Kurser"
+          }
+        }
+      },
+      "block_order": [
+        "8e756427-f886-410c-b65a-f8a1f0767ff1",
+        "0502c0ed-6d29-4e80-9d4d-bef13b8c626f",
+        "8410b9c7-f0ae-4be3-8e77-8d3411d02273"
+      ],
+      "settings": {
+        "padding_vertical_desktop": "pt-0-desktop pb-0-desktop",
+        "padding_vertical_mobile": "",
+        "layout": "layout-1",
+        "gap_between_desktop": 14,
+        "gap_between_mobile": 2,
+        "color_scheme_text": "color-text-primary",
+        "color_scheme_background": "color-background-accent-1",
+        "title": "",
+        "button_style": "button--outlined",
+        "button_text": "",
+        "button_url": ""
+      }
+    },
+    "20848649-03c0-4bff-a0e3-68e2cfcca668": {
+      "type": "seo-content",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "padding_vertical_desktop": "",
+        "padding_vertical_mobile": "",
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-default",
+        "text_size": 1,
+        "title": "Professionell hudvård shop",
+        "content": "<p>Slät, strålande och ungdomlig hud är något många kvinnor önskar sig. För att behålla skönheten måste man regelbundet ta hand om sitt ansikte och sin kropp. Ett av huvudkriterierna som påverkar effektiviteten av daglig vård är de produkter och kosmetika som används. Därför beror inte bara ens skönhet, utan också ens hälsa på ens val.<\/p><p>Vi rekommenderar att man använder professionella <a href=\"https:\/\/www.beautyworldsweden.se\/hudvard\">hud<\/a>- och <a href=\"https:\/\/www.beautyworldsweden.se\/kroppsvard\">kroppsvårdsprodukter<\/a> för att utföra <a href=\"https:\/\/www.beautyworldsweden.se\/hudvard\/yellow-rose\">Yellow Rose<\/a> ansiktsbehandlingar. Produkterna är av hög kvalité som går att köpa i vår webshop. Terapeuter kan erbjuda sina kunder att använda professionell hudvård hemma.<\/p>"
+      }
+    },
+    "1658994245757c7b20": {
+      "type": "featured-products",
+      "blocks": {
+        "8d8dee3c-2bdb-429e-9a6c-e5af884f102b": {
+          "type": "collection",
+          "settings": {
+            "products": [
+
+            ],
+            "collection": "hudvard",
+            "title": "{{ block.settings.collection.title }}",
+            "max_products": 12,
+            "show_unavailable_products": true
+          }
+        },
+        "191f2285-17ae-4c89-b5ef-afc9a25c80b3": {
+          "type": "collection",
+          "settings": {
+            "products": [
+
+            ],
+            "collection": "kroppsvard",
+            "title": "{{ block.settings.collection.title }}",
+            "max_products": 8,
+            "show_unavailable_products": true
+          }
+        }
+      },
+      "block_order": [
+        "8d8dee3c-2bdb-429e-9a6c-e5af884f102b",
+        "191f2285-17ae-4c89-b5ef-afc9a25c80b3"
+      ],
+      "settings": {
+        "padding_vertical_desktop": "",
+        "padding_vertical_mobile": "",
+        "layout": "layout-1",
+        "gap_between_desktop": 2,
+        "gap_between_mobile": 2,
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-default",
+        "title": "Populära produkter",
+        "button_text": "View all",
+        "button_url": "shopify:\/\/collections",
+        "button_style": "button--outlined"
+      }
+    },
+    "e9da00ce-591a-4a18-a2ed-a2aa55641e3d": {
+      "type": "dual-tiles",
+      "blocks": {
+        "6aff3319-b9d8-4c04-8dac-7acde3f162fd": {
+          "type": "tile",
+          "settings": {
+            "color_scheme_text": "text-colors-default",
+            "color_scheme_background": "background-colors-inverse",
+            "image_desktop": "shopify:\/\/shop_images\/portrait-feminine-tender-woman-with-sensual-look-looking-aside-low-lights-isolated-black.jpg",
+            "video_desktop_external": "",
+            "video_desktop_aspect_ratio": "16\/9",
+            "placeholder_svg_code": "",
+            "video_mobile_external": "",
+            "video_mobile_aspect_ratio": "16\/9",
+            "video_mobile_compact": false,
+            "content_position_horizontal": "text-center align-center",
+            "content_position_vertical": "justify-end",
+            "title": "",
+            "text_size": 2.5,
+            "content": "",
+            "button_style": "button--outlined-inverse",
+            "button_separator": false,
+            "button_text": "",
+            "button_url": "",
+            "content_layout": "content--absolute",
+            "block_margin_left": 0,
+            "block_margin_right": 0,
+            "block_padding_top": 0,
+            "block_padding_bottom": 0,
+            "block_padding_left": 0,
+            "block_padding_right": 0
+          }
+        },
+        "780a4c93-0ce5-420e-89b4-e8cdc8f704bc": {
+          "type": "tile",
+          "settings": {
+            "color_scheme_text": "text-colors-default",
+            "color_scheme_background": "background-colors-secondary",
+            "video_desktop_external": "",
+            "video_desktop_aspect_ratio": "16\/9",
+            "placeholder_svg_code": "",
+            "video_mobile_external": "",
+            "video_mobile_aspect_ratio": "16\/9",
+            "video_mobile_compact": false,
+            "content_position_horizontal": "text-center align-center",
+            "content_position_vertical": "justify-center",
+            "title": "Att uppnå perfekt skönhet börjar med kunskap!",
+            "text_size": 2.5,
+            "content": "<p>Få en användbar utbildning som kommer att förändra din karriär. Fördjupa dig i en värld av nya möjligheter och bli den expert som dina kunder förväntar sig.<\/p>",
+            "button_style": "button--filled",
+            "button_separator": false,
+            "button_text": "Gå till",
+            "button_url": "shopify:\/\/collections\/utbildning",
+            "content_layout": "content--relative",
+            "block_margin_left": 0,
+            "block_margin_right": 0,
+            "block_padding_top": 0,
+            "block_padding_bottom": 0,
+            "block_padding_left": 0,
+            "block_padding_right": 0
+          }
+        }
+      },
+      "block_order": [
+        "6aff3319-b9d8-4c04-8dac-7acde3f162fd",
+        "780a4c93-0ce5-420e-89b4-e8cdc8f704bc"
+      ],
+      "settings": {
+        "section_width": "max-w-full",
+        "section_height": 65,
+        "layout": "section-dual-tiles--50-50",
+        "gap_between_tiles": 3.2,
+        "gap_between_tiles_mobile": 0.2,
+        "spacing_top_desktop": 6,
+        "spacing_bottom_desktop": 6,
+        "spacing_top_mobile": 6,
+        "spacing_bottom_mobile": 6
+      }
+    },
+    "90e984e6-6e27-4581-ad90-2ced240882b7": {
+      "type": "full-width-banner",
+      "blocks": {
+        "template--18086433161531__90e984e6-6e27-4581-ad90-2ced240882b7-16771528305845bf22-0": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "Beauty World Sweden",
+            "subtitle_url": ""
+          }
+        },
+        "template--18086433161531__90e984e6-6e27-4581-ad90-2ced240882b7-16771528305845bf22-1": {
+          "type": "title",
+          "settings": {
+            "title": "Bara det bästa för dig: ett brett sortiment av produkter, ledande varumärken och exklusiva erbjudanden."
+          }
+        },
+        "44f5279d-6587-4329-9410-832273b30c7c": {
+          "type": "content",
+          "settings": {
+            "content": "<p>Gör varje hudvårdsrutin magisk med våra produkter som skapats för riktiga proffs.<\/p>"
+          }
+        },
+        "template--18086433161531__90e984e6-6e27-4581-ad90-2ced240882b7-16771528305845bf22-2": {
+          "type": "buttons",
+          "settings": {
+            "first_button_text": "BDR medical",
+            "first_button_url": "shopify:\/\/collections\/bdr-medical",
+            "first_button_style": "button--outlined",
+            "first_button_color_scheme_background": "background-colors-default",
+            "second_button_text": "Yellow Rose",
+            "second_button_url": "shopify:\/\/collections\/yellow-rose",
+            "second_button_style": "button--outlined",
+            "second_button_color_scheme_background": "background-colors-default"
+          }
+        }
+      },
+      "block_order": [
+        "template--18086433161531__90e984e6-6e27-4581-ad90-2ced240882b7-16771528305845bf22-0",
+        "template--18086433161531__90e984e6-6e27-4581-ad90-2ced240882b7-16771528305845bf22-1",
+        "44f5279d-6587-4329-9410-832273b30c7c",
+        "template--18086433161531__90e984e6-6e27-4581-ad90-2ced240882b7-16771528305845bf22-2"
+      ],
+      "settings": {
+        "full_width_banner_height": 70,
+        "full_width_banner_mobile_height": 75,
+        "banner_layout": "section-full-width-banner--full",
+        "spacing_top_desktop": 0,
+        "spacing_bottom_desktop": 0,
+        "spacing_top_mobile": 0,
+        "spacing_bottom_mobile": 0,
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-default",
+        "image_desktop": "shopify:\/\/shop_images\/Frame_17.jpg",
+        "video_desktop_external": "",
+        "video_mobile_external": "",
+        "content_position_horizontal": "align-end text-right",
+        "content_position_vertical": "justify-center",
+        "content_padding_top": 9.6,
+        "content_padding_bottom": 8,
+        "content_padding_left": 32,
+        "content_padding_right": 4.8
+      }
+    },
+    "fd88d4be-b859-4bcf-a54f-2b2c94bc9333": {
+      "type": "dual-tiles",
+      "blocks": {
+        "34a21662-5f36-4248-909b-b80f3e4a892c": {
+          "type": "tile",
+          "settings": {
+            "color_scheme_text": "text-colors-default",
+            "color_scheme_background": "background-colors-secondary",
+            "video_desktop_external": "",
+            "video_desktop_aspect_ratio": "16\/9",
+            "placeholder_svg_code": "",
+            "video_mobile_external": "",
+            "video_mobile_aspect_ratio": "16\/9",
+            "video_mobile_compact": false,
+            "content_position_horizontal": "text-center align-center",
+            "content_position_vertical": "justify-center",
+            "title": "EXKLUSIV DISTRIBUTION",
+            "text_size": 2.5,
+            "content": "<h3>RF MICRONEEDLING-MASKIN<\/h3><p>Radiofrekvens Microneedling är en nyaste microneedling maskin och har den senaste tekniken för maximal kontroll. Nålarna har förbättring i sin utseende och funktion. Detta gör att du kan nå önskade resultat över hela kroppen!<\/p>",
+            "button_style": "button--filled",
+            "button_separator": false,
+            "button_text": "Кöp",
+            "button_url": "shopify:\/\/collections\/utbildning",
+            "content_layout": "content--relative",
+            "block_margin_left": 0,
+            "block_margin_right": 0,
+            "block_padding_top": 0,
+            "block_padding_bottom": 0,
+            "block_padding_left": 0,
+            "block_padding_right": 0
+          }
+        },
+        "57e29e97-de8b-4367-a30d-c99635e8889d": {
+          "type": "tile",
+          "settings": {
+            "color_scheme_text": "text-colors-default",
+            "color_scheme_background": "background-colors-accent-1",
+            "image_desktop": "shopify:\/\/shop_images\/RFMicroneedling_f5d59ec1-62a4-43d3-87f8-f35168d415a4.png",
+            "video_desktop_external": "",
+            "video_desktop_aspect_ratio": "16\/9",
+            "placeholder_svg_code": "",
+            "video_mobile_external": "",
+            "video_mobile_aspect_ratio": "16\/9",
+            "video_mobile_compact": false,
+            "content_position_horizontal": "text-center align-center",
+            "content_position_vertical": "justify-end",
+            "title": "",
+            "text_size": 2.5,
+            "content": "",
+            "button_style": "button--outlined-inverse",
+            "button_separator": false,
+            "button_text": "",
+            "button_url": "",
+            "content_layout": "content--absolute",
+            "block_margin_left": 0,
+            "block_margin_right": 0,
+            "block_padding_top": 0,
+            "block_padding_bottom": 0,
+            "block_padding_left": 0,
+            "block_padding_right": 0
+          }
+        }
+      },
+      "block_order": [
+        "34a21662-5f36-4248-909b-b80f3e4a892c",
+        "57e29e97-de8b-4367-a30d-c99635e8889d"
+      ],
+      "settings": {
+        "section_width": "max-w-full",
+        "section_height": 65,
+        "layout": "section-dual-tiles--50-50",
+        "gap_between_tiles": 3.2,
+        "gap_between_tiles_mobile": 0.2,
+        "spacing_top_desktop": 6,
+        "spacing_bottom_desktop": 6,
+        "spacing_top_mobile": 6,
+        "spacing_bottom_mobile": 6
+      }
+    },
+    "14bc8a62-0495-49fc-9048-cfc22c66262a": {
+      "type": "before-and-after",
+      "blocks": {
+        "template--21452329091365__14bc8a62-0495-49fc-9048-cfc22c66262a-image-before-slide-1": {
+          "type": "image-before-slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_1468.jpg",
+            "title": "Innan",
+            "color_title": "#ffffff"
+          }
+        },
+        "template--21452329091365__14bc8a62-0495-49fc-9048-cfc22c66262a-image-after-slide-1": {
+          "type": "image-after-slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_1469.jpg",
+            "title": "Efter",
+            "color_title": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "template--21452329091365__14bc8a62-0495-49fc-9048-cfc22c66262a-image-before-slide-1",
+        "template--21452329091365__14bc8a62-0495-49fc-9048-cfc22c66262a-image-after-slide-1"
+      ],
+      "settings": {
+        "title": "INNAN \/ EFTER",
+        "content": "Att regelbundet sköta om huden i ansiktet hjälper till att bekämpa akne och bibehålla dess renhet och hälsa",
+        "layout": "section_slider_layout--full",
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-default",
+        "button_style": "button--filled",
+        "button_text": "Handla nu",
+        "button_url": "shopify:\/\/collections\/akne-hud-kosmwtika"
+      }
+    },
+    "ff1b88c1-7f9a-42ed-a737-5ce178874c08": {
+      "type": "testimonials",
+      "blocks": {
+        "template--16809880650043__ff1b88c1-7f9a-42ed-a737-5ce178874c08-1667844595b40c7541-0": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Min upplevelse med plasmalift utbildningen var super bra, jag har lärt mig mycket om den magiska behandlingen som man ser direkt resultate utan kirurgi, under utbildningen fick jag lära mig mycket om huden och hur den fungerar, det som är bra med kliniken är att de tar inte många elever, så att man får svar på alla frågar och har tid för den praktiska delen. den var väldigt lärorikt utbildning och det var därför valde jag samma klinik för att gå vidare i min karriär.<\/p>",
+            "author": "",
+            "link_title": "",
+            "link_url": "\/"
+          }
+        },
+        "e7c7b6cf-a68b-409a-b328-07dd47892940": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Jag är supernöjd och lycklig över att jag fått utbilda mej hos fina Victoria! Hon är proffsig och mkt kunnig i branschen. Återkopplar alltid när man har frågor efter hemgång och i fortsatta arbetslivet. Produkterna är super!! Jag har gått volymkurs, microneedling, microblading, bb-glow & kosmetisk tatuering med maskin hos henne. Hälsningar Agneta Andersson<br\/>Well frisör & interiör<\/p>",
+            "author": "Agneta Andersson",
+            "link_title": "Using Shopify For Over A Year",
+            "link_url": "\/"
+          }
+        }
+      },
+      "block_order": [
+        "template--16809880650043__ff1b88c1-7f9a-42ed-a737-5ce178874c08-1667844595b40c7541-0",
+        "e7c7b6cf-a68b-409a-b328-07dd47892940"
+      ],
+      "settings": {
+        "padding_vertical_desktop": "pt-0-desktop pb-0-desktop",
+        "padding_vertical_mobile": "pt-0-mobile pb-0-mobile",
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-default",
+        "layout": "no-image",
+        "gap_between_desktop": 2,
+        "gap_between_mobile": 2,
+        "title": "Från folket"
+      }
+    },
+    "b9e1f375-bbe3-49e0-b449-eff934bd3497": {
+      "type": "blog-articles",
+      "settings": {
+        "padding_vertical_desktop": "",
+        "padding_vertical_mobile": "",
+        "layout": "layout-1",
+        "gap_between_desktop": 2,
+        "gap_between_mobile": 2,
+        "content_alignment": "text-center",
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-default",
+        "heading": "Blog",
+        "button_style": "button--outlined",
+        "button_text": "Visit Blog",
+        "blog": ""
+      }
+    },
+    "90f0172d-db82-4963-95c4-6a1724783cd8": {
+      "type": "trust-indicators",
+      "blocks": {
+        "template--16809880650043__90f0172d-db82-4963-95c4-6a1724783cd8-16677286337545964d-1": {
+          "type": "indicator",
+          "settings": {
+            "color_scheme_text": "text-colors-default",
+            "color_scheme_background": "background-colors-secondary",
+            "decorator": "shopify:\/\/shop_images\/medal.png",
+            "decorator_svg_code": "",
+            "color_scheme_decorator": "text-colors-default",
+            "color_scheme_background_decorator": "background-colors-default",
+            "title": "CERTIFIERADE PRODUKTER",
+            "link_title": "",
+            "link_url": "#"
+          }
+        },
+        "template--16809880650043__90f0172d-db82-4963-95c4-6a1724783cd8-16677286337545964d-0": {
+          "type": "indicator",
+          "settings": {
+            "color_scheme_text": "text-colors-default",
+            "color_scheme_background": "background-colors-secondary",
+            "decorator": "shopify:\/\/shop_images\/reliability.png",
+            "decorator_svg_code": "",
+            "color_scheme_decorator": "text-colors-default",
+            "color_scheme_background_decorator": "background-colors-default",
+            "title": "PÅLITLIGA VARUMÄRKEN",
+            "link_title": "",
+            "link_url": "#"
+          }
+        },
+        "template--16809880650043__90f0172d-db82-4963-95c4-6a1724783cd8-16677286337545964d-2": {
+          "type": "indicator",
+          "settings": {
+            "color_scheme_text": "text-colors-default",
+            "color_scheme_background": "background-colors-secondary",
+            "decorator": "shopify:\/\/shop_images\/bottle.png",
+            "decorator_svg_code": "",
+            "color_scheme_decorator": "text-colors-default",
+            "color_scheme_background_decorator": "background-colors-default",
+            "title": "Stort sortiment",
+            "link_title": "",
+            "link_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "template--16809880650043__90f0172d-db82-4963-95c4-6a1724783cd8-16677286337545964d-1",
+        "template--16809880650043__90f0172d-db82-4963-95c4-6a1724783cd8-16677286337545964d-0",
+        "template--16809880650043__90f0172d-db82-4963-95c4-6a1724783cd8-16677286337545964d-2"
+      ],
+      "settings": {
+        "slider_mobile": true,
+        "layout": "layout-1",
+        "padding_vertical_desktop": "pt-0-desktop pb-0-desktop",
+        "padding_vertical_mobile": "pt-0-mobile pb-0-mobile"
+      }
+    },
+    "c6900f23-1eaa-4fc2-a4c6-bf9ef3cfc2ca": {
+      "type": "hero-banner",
+      "settings": {
+        "slider_height": 100,
+        "slider_autoplay": false,
+        "slider_autoplay_interval": 6,
+        "slider_arrows": false,
+        "slider_arrows_position": "hero__swiper-buttons--sides",
+        "slider_arrows_color": "text-colors-inverse"
+      }
+    },
+    "878e1659-6f26-4cb1-beb3-222e6c3ba8f5": {
+      "type": "seo-content",
+      "custom_css": [
+        ".entry {text-align: justify;}"
+      ],
+      "settings": {
+        "padding_vertical_desktop": "",
+        "padding_vertical_mobile": "pb-0-mobile",
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-default",
+        "text_size": 1,
+        "title": "Vad vi erbjuder våra kunder",
+        "content": "<p>Beauty World Sweden - professionell hudvård shop i Stockholm som tar hand om din skönhet. Högkvalitativa produkter och <a href=\"https:\/\/www.beautyworldsweden.se\/maskiner\">utrustning<\/a> på kosmetikamarknaden, högkvalitativ eftermarknadsservice, konkurrenskraftiga priser inom alla kategorier av varor, vilket har resulterat i återkommande kunder och goda referenser.<\/p><p>Vår professionell hudvård shop erbjuder ett brett och varierat utbud av produkter:<\/p><ol><li><a href=\"https:\/\/www.beautyworldsweden.se\/hudvard\">Skötselprodukter och microneedling<\/a>. <a href=\"https:\/\/www.beautyworldsweden.se\/hudvard\/mask\">Masker<\/a>, <a href=\"https:\/\/www.beautyworldsweden.se\/hudvard\/serum-ampull\">serum<\/a>, <a href=\"https:\/\/www.beautyworldsweden.se\/hudvard\/kram\">krämer<\/a>, <a href=\"https:\/\/www.beautyworldsweden.se\/hudvard\/rengoring-ansiktsvatten\">rengöring<\/a>, <a href=\"https:\/\/www.beautyworldsweden.se\/hudvard\/peeling\">peeling<\/a>, detta är bara en liten del av det som presenteras i vår webshop . Vi erbjuder även ett brett utbud av <a href=\"https:\/\/www.beautyworldsweden.se\/hudvard\/akne-hud\">produkter för problem- och aknehy<\/a>. I sortimentet kan du välja de lämpligaste ansikts- och <a href=\"https:\/\/www.beautyworldsweden.se\/hudvard\">hudvårdsprodukter<\/a>, utifrån personliga krav och önskemål.<\/li><li><a href=\"https:\/\/www.beautyworldsweden.se\/micropigmentering\">Microblading verktyg<\/a>. Du kan köpa <a href=\"https:\/\/www.beautyworldsweden.se\/micropigmentering\/apparater\">maskiner<\/a>, <a href=\"https:\/\/www.beautyworldsweden.se\/micropigmentering\/pigmenter\">pigment<\/a>, <a href=\"https:\/\/www.beautyworldsweden.se\/micropigmentering\/nalar\">nålar<\/a> och <a href=\"https:\/\/www.beautyworldsweden.se\/micropigmentering\/tillbehor\">tillbehör<\/a> från Goldeneye som är av tyskt fabrikat och som har funnits i över 20 år på marknaden, och mycket mer för professionell kosmetiskpigmentering . Alla produkter är certifierade och uppfyller senaste lagkraven från Läkemedelsverket.<\/li><li><a href=\"https:\/\/www.beautyworldsweden.se\/fransar\">Produkter för ögonfransförlängning och Lash lift<\/a>. I vårt sortiment hittar du ett brett urval av <a href=\"https:\/\/www.beautyworldsweden.se\/fransar\/vg-lashes\">lösögonfransar<\/a> i olika längder och tjocklekar. I webbutiken finns professionella verktyg för ögonfransförlängning och <a href=\"https:\/\/www.beautyworldsweden.se\/fransar\/lash-lift\">Lash lift<\/a>, förbrukningsmaterial och <a href=\"https:\/\/www.beautyworldsweden.se\/fransar\/tillbehor\">tillbehör<\/a>.<\/li><li><a href=\"https:\/\/www.beautyworldsweden.se\/maskiner\">Salongutrustning<\/a>. Hos Beauty World Sweden, en professionell hudvårdsbutik, kan du köpa allt du behöver för att starta din egen skönhetssalong. Vi har ett brett utbud av professionell utrustning och förbrukningsvaror från världsledande varumärken i branschen.<\/li><\/ol>"
+      }
+    },
+    "2cbbb58e-b5d1-45dc-8a66-72bf21c3aabd": {
+      "type": "store-locator",
+      "blocks": {
+        "template--21452329091365__2cbbb58e-b5d1-45dc-8a66-72bf21c3aabd-pin-1": {
+          "type": "pin",
+          "settings": {
+            "title": "Victoria Grepo Akademin",
+            "store_address": "Götgatan 81, 11662, Stockholm",
+            "store_tel": "+46727215333",
+            "store_opening_hours": "<p>Mån - Fre 9.00 - 17.00<\/p>",
+            "store_latitude": "59.31037637827394",
+            "store_longitude": "18.075603590690218",
+            "coordinate_title": "",
+            "button_style": "button--outlined",
+            "store_pin": "Vägbeskrivning",
+            "store_pin_link": "",
+            "color_scheme_text": "text-colors-default",
+            "color_scheme_background": "background-colors-default"
+          }
+        }
+      },
+      "block_order": [
+        "template--21452329091365__2cbbb58e-b5d1-45dc-8a66-72bf21c3aabd-pin-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "api_key": "",
+        "zoom_level": 4,
+        "section_width": "container",
+        "section_height": 60,
+        "layout": "map_and_sidebar",
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-default",
+        "color_scheme_background_card_content": "background-colors-accent-1",
+        "color_scheme_background_search_area": "background-colors-accent-2",
+        "spacing_top_desktop": 6,
+        "spacing_bottom_desktop": 6,
+        "spacing_top_mobile": 6,
+        "spacing_bottom_mobile": 6
+      }
+    }
+  },
+  "order": [
+    "1658995208ad05f95f",
+    "9ef906c3-a2c0-4f65-9920-1daaba21009a",
+    "16e24524-2040-41a4-b5ca-3a425d62879b",
+    "20848649-03c0-4bff-a0e3-68e2cfcca668",
+    "1658994245757c7b20",
+    "e9da00ce-591a-4a18-a2ed-a2aa55641e3d",
+    "90e984e6-6e27-4581-ad90-2ced240882b7",
+    "fd88d4be-b859-4bcf-a54f-2b2c94bc9333",
+    "14bc8a62-0495-49fc-9048-cfc22c66262a",
+    "ff1b88c1-7f9a-42ed-a737-5ce178874c08",
+    "b9e1f375-bbe3-49e0-b449-eff934bd3497",
+    "90f0172d-db82-4963-95c4-6a1724783cd8",
+    "c6900f23-1eaa-4fc2-a4c6-bf9ef3cfc2ca",
+    "878e1659-6f26-4cb1-beb3-222e6c3ba8f5",
+    "2cbbb58e-b5d1-45dc-8a66-72bf21c3aabd"
+  ]
+}

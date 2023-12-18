@@ -1,0 +1,56 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-collection",
+      "blocks": {
+        "96d74506-d90d-4c41-b78f-4d67853600e5": {
+          "type": "text-card",
+          "disabled": true,
+          "settings": {
+            "color_scheme_text": "color-text-primary",
+            "color_scheme_background": "background-colors-accent-2",
+            "position": 7,
+            "title": "Share info about your collection with your customers.",
+            "button_text": "View All",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "96d74506-d90d-4c41-b78f-4d67853600e5"
+      ],
+      "settings": {
+        "color_scheme_text": "color-text-primary",
+        "color_scheme_background": "background-colors-default",
+        "enable_products_count": true,
+        "enable_sorting": true,
+        "enable_filters": true,
+        "filters_style": "sidebar",
+        "button_style": "button--filter",
+        "sidebar_navigation": "",
+        "column_gap_desktop": 0.2,
+        "column_gap_mobile": 0.2,
+        "products_per_page": 14,
+        "products_per_row_default": "3",
+        "products_per_row_ui": true
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "custom_css": [
+        ".collection-hero__content {text-align: justify;}"
+      ],
+      "settings": {
+        "section_height": 40,
+        "banner_layout": "banner--full",
+        "color_scheme_text": "color-text-primary",
+        "color_scheme_text_no_image": "color-text-primary",
+        "color_scheme_background": "background-colors-default"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "banner"
+  ]
+}

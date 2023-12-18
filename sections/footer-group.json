@@ -1,0 +1,76 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "b7f1dbf8-fb4b-4c72-ad35-cf47b087fc1f": {
+          "type": "menu",
+          "settings": {
+            "title": "Info",
+            "title_url": "",
+            "menu": "footer"
+          }
+        },
+        "64984ef6-5ee3-4d7c-88e1-8342b1207fad": {
+          "type": "menu",
+          "settings": {
+            "title": "Andra sidor",
+            "title_url": "",
+            "menu": "footer-2"
+          }
+        },
+        "2dae0042-ed7e-4988-8091-d4a5107d7169": {
+          "type": "menu",
+          "settings": {
+            "title": "Mer information",
+            "title_url": "",
+            "menu": "footer-3"
+          }
+        },
+        "f6d62077-bca9-4052-b7aa-f6375455521d": {
+          "type": "socials",
+          "settings": {
+            "icons": false
+          }
+        },
+        "406231f6-d15c-40f5-9966-70f7baffb4ad": {
+          "type": "utilities",
+          "settings": {
+            "newsletter": true,
+            "newsletter_content": "För att göra en beställning och se priser måste du registrera dig",
+            "country_selector": true
+          }
+        }
+      },
+      "block_order": [
+        "b7f1dbf8-fb4b-4c72-ad35-cf47b087fc1f",
+        "64984ef6-5ee3-4d7c-88e1-8342b1207fad",
+        "2dae0042-ed7e-4988-8091-d4a5107d7169",
+        "f6d62077-bca9-4052-b7aa-f6375455521d",
+        "406231f6-d15c-40f5-9966-70f7baffb4ad"
+      ],
+      "settings": {
+        "first_accordion_show": true,
+        "social_links": true,
+        "social_links_in_new_tab": true,
+        "color_scheme_text": "color-text-primary",
+        "color_scheme_background": "color-background-inverse",
+        "layout": "footer--logo-none",
+        "logo_svg_code": "",
+        "logo_width": 160,
+        "logo_width_mobile": 130,
+        "footer_bottom_content_alignment": "row",
+        "enable_payment_icons": true,
+        "custom_payment_types": "",
+        "payment_icons_color": false,
+        "copyright": "",
+        "enable_follow_on_shop": false
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

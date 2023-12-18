@@ -1,0 +1,44 @@
+{{ 'section-store-locator.css' | asset_url | stylesheet_tag }}
+
+{% capture iconStorePhone %}
+  {% render 'icon-store-phone' %}
+{% endcapture %}
+
+{% capture iconPinLocation %}
+  {% render 'icon-pin-location' %}
+{% endcapture %}
+
+{%- if storeName != blank or storeAddress != blank -%}
+  <div class="store-locator-card__text-content">
+    <h2 class="store-locator-card__title">{{ storeName }}</h2>
+    <span class="store-locator-card__paragraph store-locator-card__address">{{ storeAddress }}</span>
+  </div>
+  {%- endif -%}
+
+  {%- if storeOpeningHours != blank or storeClosingDays != blank -%}
+  <div class="store-locator-card__schedule-container {% if storePin != blank or storeTel != blank %} store-locator-card__schedule-container-actions-gap{% endif %}">
+    {%- if storeOpeningHours != blank -%}
+      <span class="store-locator-card__paragraph">{{ storeOpeningHours }}</span>
+    {%- endif -%}
+  </div>
+  {%- endif -%}
+
+  {%- if storePin != blank or storeTel != blank -%}
+    <div class="store-locator-card__actions">
+
+      <!-- LOCATION BUTTON -->
+
+        {%- render 'button', value: storePin, type: 'link', href: storeLink, target='_blank', class: 'button button-with-icon--size-small button-with-icon--outlined button-with-icon--tertiary button--capitalize store-locator-button-link store-locator-card__button', with_icon: true, start_icon: iconPinLocation, button_style: buttonStyle -%}
+
+      <!-- TEL BUTTON -->
+
+      {%- assign storeTelLink = 'tel:' | append: storeTel -%}
+
+        {%- render 'button', value: storeTel, type: 'link', href: storeTelLink, class: 'button button-with-icon--size-small button-with-icon--outlined button-with-icon--tertiary button--capitalize store-locator-button-link store-locator-card__button store-locator-card__button-tel', with_icon: true, start_icon: iconStorePhone, button_style: buttonStyle -%}
+
+    </div>
+  {%- endif -%}
+
+ <span class="store-locator-card__coordinate-title">{{ coordinateTitle }}</span>
+ <span class="store-locator-card__longitude">{{ storeLongitude }}</span>
+ <span class="store-locator-card__latitude">{{ storeLatitude }}</span>

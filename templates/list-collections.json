@@ -1,0 +1,22 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "settings": {
+        "collections_to_show": "all",
+        "padding_vertical_desktop": "",
+        "padding_vertical_mobile": "",
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-default",
+        "card_collection_color_scheme_text": "text-colors-default",
+        "card_collection_color_scheme_text_no_image": "text-colors-default",
+        "column_gap_desktop": 0.2,
+        "column_gap_mobile": 0.2,
+        "collections_per_page": 12
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

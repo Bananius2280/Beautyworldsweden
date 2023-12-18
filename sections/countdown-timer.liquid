@@ -1,0 +1,999 @@
+{{- 'section-countdown-timer.css' | asset_url | stylesheet_tag -}}
+
+{% style %}
+  .section-{{ section.id }}{
+    padding-top: calc(var(--section-spacing-unit-mobile) * {{ section.settings.spacing_top_mobile }});
+    padding-bottom: calc(var(--section-spacing-unit-mobile) * {{ section.settings.spacing_bottom_mobile }});
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}{
+      padding-top: calc(var(--section-spacing-unit-desktop) * {{ section.settings.spacing_top_desktop }});
+      padding-bottom: calc(var(--section-spacing-unit-desktop) * {{ section.settings.spacing_bottom_desktop }});
+    }
+  }
+{% endstyle %}
+
+{%- capture section_additional_classes -%}
+  {{ section.settings.color_scheme_text }}
+{%- endcapture -%}
+
+{%- capture countdown-timer_container-media_additional_classes -%}
+  {% if section.settings.layout == 'image_none' %}
+    countdown-timer__container-media-no-image
+  {% endif %}
+  {% if section.settings.layout == 'image' %}
+    countdown-timer__container-media-image
+  {% endif %}
+{%- endcapture -%}
+
+{%- capture countdown-timer_container_additional_classes -%}
+  {% if section.settings.layout == 'image_none' %}
+    countdown-timer__container-no-image
+  {% endif %}
+  {% if section.settings.layout == 'image' %}
+    countdown-timer__container-image
+  {% endif %}
+  {%- if section.settings.button_url == blank or section.settings.button_text == blank -%}
+    countdown-timer__container-no-button
+  {% endif %}
+{%- endcapture -%}
+
+{%- liquid
+  assign countdown_timer_year = section.settings.countdown_timer_year
+  assign countdown_timer_month = section.settings.countdown_timer_month
+  assign countdown_timer_day = section.settings.countdown_timer_day
+  assign countdown_timer_hour = section.settings.countdown_timer_hour
+  assign countdown_timer_minute = section.settings.countdown_timer_minute
+  assign restart = section.settings.restart_timer
+  assign repeat_cycle = section.settings.repeat_cycle
+
+  capture date
+    echo countdown_timer_day | append: '-' | append: countdown_timer_month | append: '-' | append: countdown_timer_year
+  endcapture
+
+  capture time
+    echo countdown_timer_hour | append: ':' | append: countdown_timer_minute
+  endcapture
+
+  assign countdown_border_style = 'countdown-timer__container-' | append: section.settings.border_style
+
+-%}
+
+<!-- SECTION -->
+
+<section class='section section-{{ section.id }} section-countdown-timer overflow-hidden js-animation-fade-in {{ section_additional_classes }}'>
+  <div class='container{% if section.settings.fullwidth %} container--fullwidth{% endif %} {% if section.settings.fullwidth and section.settings.layout == 'image' %} countdown-timer__container-media-fullwidth{% endif %}'>
+    <div class='countdown-timer__container-media {{ countdown-timer_container-media_additional_classes | strip }} {{ section.settings.color_scheme_background }} {{ countdown_border_style }}'>
+      <div class='countdown-timer__container {{ countdown-timer_container_additional_classes | strip }}'>
+        <!-- HEADER -->
+
+        <div class='countdown-timer__header-container'>
+          <h3 class='h2 countdown-timer__title'>
+            {{ section.settings.title }}
+          </h3>
+          <p class='countdown-timer__subtitle countdown-timer__subtitle-desktop'>
+            {{ section.settings.subtitle }}
+          </p>
+          <p class='countdown-timer__subtitle countdown-timer__subtitle-mobile'>
+            {{ section.settings.subtitle_mobile }}
+          </p>
+        </div>
+
+        <!-- END OF HEADER -->
+
+        <!-- COUNTER -->
+
+        {%- unless section.settings.layout == 'image' -%}
+          <countdown-timer
+            class='countdown-timer countdown-timer__date-container'
+            data-date='{{ date }}'
+            data-time='{{ time }}'
+            data-restart='{{ restart }}'
+            data-repeatcycle='{{ repeat_cycle }}'
+            data-locale='{% if request.locale.iso_code == 'en' %}en{% endif %}'>
+            <div class='countdown-timer__date-wrapper days {% if section.settings.enable_days == false %}countdown-timer__date-wrapper-hidden{% endif %}'>
+              <div class='h1 countdown-timer__date-header'>0</div>
+              <div
+                class='countdown-timer__date-caption'
+                data-day={{ 'countdown-timer.day' | t }}
+                data-days={{ 'countdown-timer.days' | t }}>
+                {{ 'countdown-timer.days' | t }}
+              </div>
+            </div>
+            <div class='countdown-timer__date-wrapper hours {% if section.settings.enable_hours == false %}countdown-timer__date-wrapper-hidden{% endif %}'>
+              <div class='h1 countdown-timer__date-header'>0</div>
+              <div
+                class='countdown-timer__date-caption'
+                data-hour={{ 'countdown-timer.hour' | t }}
+                data-hours={{ 'countdown-timer.hours' | t }}>
+                {{ 'countdown-timer.hours' | t }}
+              </div>
+            </div>
+            <div class='countdown-timer__date-wrapper minutes {% if section.settings.enable_minutes == false %}countdown-timer__date-wrapper-hidden{% endif %}'>
+              <div class='h1 countdown-timer__date-header'>0</div>
+              <div
+                class='countdown-timer__date-caption'
+                data-minute={{ 'countdown-timer.minute' | t }}
+                data-minutes={{ 'countdown-timer.minutes' | t }}>
+                {{ 'countdown-timer.minutes' | t }}
+              </div>
+            </div>
+            <div class='countdown-timer__date-wrapper seconds {% if section.settings.enable_seconds == false %}countdown-timer__date-wrapper-hidden{% endif %}'>
+              <div class='h1 countdown-timer__date-header'>0</div>
+              <div class='countdown-timer__date-caption'>
+                {{ 'countdown-timer.seconds' | t }}
+              </div>
+            </div>
+          </countdown-timer>
+        {% endunless %}
+
+        <!-- END OF COUNTER -->
+
+        <!-- BUTTON -->
+
+        {%- if section.settings.button_url != blank and section.settings.button_text != blank -%}
+          <div class='countdown-timer__button-container'>
+            <div class='countdown-timer__button-wrapper'>
+              {%- render 'button', type: 'link', class: 'button button--auto custom_class {{ section_button_classes | strip }}', button_style: section.settings.button_style, value: section.settings.button_text, href: section.settings.button_url -%}
+            </div>
+          </div>
+        {%- endif -%}
+
+        <!-- END OF BUTTON -->
+      </div>
+
+      <!-- MEDIA -->
+
+      {%- unless section.settings.layout == 'image_none' -%}
+        <div class='countdown-timer__image-container'>
+          {%- liquid
+            if section.settings.image != blank
+              render 'image', image: section.settings.image, alt: section.settings.image.alt | escape, class: 'countdown-timer__image'
+            else
+              echo 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg'
+            endif
+          -%}
+        </div>
+      {% endunless %}
+
+      <!-- END OF MEDIA -->
+    </div>
+  </div>
+</section>
+
+<script src='{{ 'countdown-timer.js' | asset_url }}' defer='defer'></script>
+
+{% schema %}
+{
+  "name": "t:sections.countdown-timer.name",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.header.settings.header_general.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "fullwidth",
+      "label": "t:sections.header.settings.fullwidth.label",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header_layout.content"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "t:sections.countdown-timer.settings.layout.label",
+      "options": [
+        {
+          "value": "image",
+          "label": "t:sections.countdown-timer.settings.layout.options.image.label"
+        },
+        {
+          "value": "image_none",
+          "label": "t:sections.countdown-timer.settings.layout.options.image_none.label"
+        }
+      ],
+      "default": "image_none"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header_padding_vertical.content"
+    },
+    {
+      "type": "range",
+      "id": "spacing_top_desktop",
+      "label": "t:sections.global.settings.spacing_top_desktop.label",
+      "min": 0,
+      "max": 6,
+      "step": 1,
+      "default": 6,
+      "unit": "x"
+    },
+    {
+      "type": "range",
+      "id": "spacing_bottom_desktop",
+      "label": "t:sections.global.settings.spacing_bottom_desktop.label",
+      "min": 0,
+      "max": 6,
+      "step": 1,
+      "default": 6,
+      "unit": "x"
+    },
+    {
+      "type": "range",
+      "id": "spacing_top_mobile",
+      "label": "t:sections.global.settings.spacing_top_mobile.label",
+      "min": 0,
+      "max": 6,
+      "step": 1,
+      "default": 6,
+      "unit": "x"
+    },
+    {
+      "type": "range",
+      "id": "spacing_bottom_mobile",
+      "label": "t:sections.global.settings.spacing_bottom_mobile.label",
+      "min": 0,
+      "max": 6,
+      "step": 1,
+      "default": 6,
+      "unit": "x"
+    },
+    {
+      "type": "select",
+      "id": "border_style",
+      "label": "t:sections.countdown-timer.settings.border_title.label",
+      "options": [
+        {
+          "value": "top-bottom-border",
+          "label": "t:sections.countdown-timer.settings.top_bottom_border.label"
+        },
+        {
+          "value": "top-border",
+          "label": "t:sections.countdown-timer.settings.top_border.label"
+        },
+        {
+          "value": "bottom-border",
+          "label": "t:sections.countdown-timer.settings.bottom_border.label"
+        },
+        {
+          "value": "border-none",
+          "label": "t:sections.countdown-timer.settings.no_border.label"
+        },
+        {
+          "value": "border-seperators-none",
+          "label": "t:sections.countdown-timer.settings.no_border_and_seperators.label"
+        }
+      ],
+      "default": "top-bottom-border"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.countdown-timer.settings.header_title.content"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.countdown-timer.settings.title.label",
+      "default": "Spring sale"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "t:sections.countdown-timer.settings.subtitle.label",
+      "default": "50% Off Everything for a limited time only"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_mobile",
+      "label": "t:sections.countdown-timer.settings.subtitle_mobile.label",
+      "default": "50% Off Everything. Limited time only"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.countdown-timer.settings.image_header.content"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.countdown-timer.settings.image.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header_color_scheme.content"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme_text",
+      "label": "t:sections.global.settings.color_scheme_text.label",
+      "options": [
+        {
+          "value": "text-colors-default",
+          "label": "t:sections.global.settings.color_scheme_text.options.default.label"
+        },
+        {
+          "value": "text-colors-secondary",
+          "label": "t:sections.global.settings.color_scheme_text.options.secondary.label"
+        },
+        {
+          "value": "text-colors-inverse",
+          "label": "t:sections.global.settings.color_scheme_text.options.inverse.label"
+        }
+      ],
+      "default": "text-colors-default"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme_background",
+      "label": "t:sections.global.settings.color_scheme_background.label",
+      "options": [
+        {
+          "value": "background-colors-default",
+          "label": "t:sections.global.settings.color_scheme_background.options.default.label"
+        },
+        {
+          "value": "background-colors-secondary",
+          "label": "t:sections.global.settings.color_scheme_background.options.secondary.label"
+        },
+        {
+          "value": "background-colors-accent-1",
+          "label": "t:sections.global.settings.color_scheme_background.options.accent_one.label"
+        },
+        {
+          "value": "background-colors-accent-2",
+          "label": "t:sections.global.settings.color_scheme_background.options.accent_two.label"
+        },
+        {
+          "value": "background-colors-inverse",
+          "label": "t:sections.global.settings.color_scheme_background.options.inverse.label"
+        }
+      ],
+      "default": "background-colors-default"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.countdown-timer.settings.header_timer.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "restart_timer",
+      "label": "t:sections.countdown-timer.settings.restart_timer.label",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "repeat_cycle",
+      "label": "t:sections.global.settings.timer_repeat_cycle.label",
+      "options": [
+        {
+          "value": "Week",
+          "label": "t:sections.global.settings.timer_repeat_cycle.options.week.label"
+        },
+        {
+          "value": "Month",
+          "label": "t:sections.global.settings.timer_repeat_cycle.options.month.label"
+        }
+      ],
+      "default": "Week"
+    },
+    {
+      "type": "number",
+      "id": "countdown_timer_year",
+      "label": "t:sections.global.settings.countdown_timer_year.label",
+      "default": 2023
+    },
+    {
+      "type": "select",
+      "id": "countdown_timer_month",
+      "label": "t:sections.global.settings.countdown_timer_month.label",
+      "options": [
+        {
+          "value": "01",
+          "label": "t:sections.global.settings.countdown_timer_month.options.january.label"
+        },
+        {
+          "value": "02",
+          "label": "t:sections.global.settings.countdown_timer_month.options.february.label"
+        },
+        {
+          "value": "03",
+          "label": "t:sections.global.settings.countdown_timer_month.options.march.label"
+        },
+        {
+          "value": "04",
+          "label": "t:sections.global.settings.countdown_timer_month.options.april.label"
+        },
+        {
+          "value": "05",
+          "label": "t:sections.global.settings.countdown_timer_month.options.may.label"
+        },
+        {
+          "value": "06",
+          "label": "t:sections.global.settings.countdown_timer_month.options.june.label"
+        },
+        {
+          "value": "07",
+          "label": "t:sections.global.settings.countdown_timer_month.options.july.label"
+        },
+        {
+          "value": "08",
+          "label": "t:sections.global.settings.countdown_timer_month.options.august.label"
+        },
+        {
+          "value": "09",
+          "label": "t:sections.global.settings.countdown_timer_month.options.september.label"
+        },
+        {
+          "value": "10",
+          "label": "t:sections.global.settings.countdown_timer_month.options.october.label"
+        },
+        {
+          "value": "11",
+          "label": "t:sections.global.settings.countdown_timer_month.options.november.label"
+        },
+        {
+          "value": "12",
+          "label": "t:sections.global.settings.countdown_timer_month.options.december.label"
+        }
+      ],
+      "default": "01"
+    },
+    {
+      "type": "select",
+      "id": "countdown_timer_day",
+      "label": "t:sections.global.settings.countdown_timer_day.label",
+      "options": [
+        {
+          "value": "01",
+          "label": "01"
+        },
+        {
+          "value": "02",
+          "label": "02"
+        },
+        {
+          "value": "03",
+          "label": "03"
+        },
+        {
+          "value": "04",
+          "label": "04"
+        },
+        {
+          "value": "05",
+          "label": "05"
+        },
+        {
+          "value": "06",
+          "label": "06"
+        },
+        {
+          "value": "07",
+          "label": "07"
+        },
+        {
+          "value": "08",
+          "label": "08"
+        },
+        {
+          "value": "09",
+          "label": "09"
+        },
+        {
+          "value": "10",
+          "label": "10"
+        },
+        {
+          "value": "11",
+          "label": "11"
+        },
+        {
+          "value": "12",
+          "label": "12"
+        },
+        {
+          "value": "13",
+          "label": "13"
+        },
+        {
+          "value": "14",
+          "label": "14"
+        },
+        {
+          "value": "15",
+          "label": "15"
+        },
+        {
+          "value": "16",
+          "label": "16"
+        },
+        {
+          "value": "17",
+          "label": "17"
+        },
+        {
+          "value": "18",
+          "label": "18"
+        },
+        {
+          "value": "19",
+          "label": "19"
+        },
+        {
+          "value": "20",
+          "label": "20"
+        },
+        {
+          "value": "21",
+          "label": "21"
+        },
+        {
+          "value": "22",
+          "label": "22"
+        },
+        {
+          "value": "23",
+          "label": "23"
+        },
+        {
+          "value": "24",
+          "label": "24"
+        },
+        {
+          "value": "25",
+          "label": "25"
+        },
+        {
+          "value": "26",
+          "label": "26"
+        },
+        {
+          "value": "27",
+          "label": "27"
+        },
+        {
+          "value": "28",
+          "label": "28"
+        },
+        {
+          "value": "29",
+          "label": "29"
+        },
+        {
+          "value": "30",
+          "label": "30"
+        },
+        {
+          "value": "31",
+          "label": "31"
+        }
+      ],
+      "default": "01"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_days",
+      "label": "t:sections.global.settings.countdown_timer_enable_days.label",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "countdown_timer_hour",
+      "label": "t:sections.global.settings.countdown_timer_hour.label",
+      "options": [
+        {
+          "value": "00",
+          "label": "12 AM"
+        },
+        {
+          "value": "01",
+          "label": "01 AM"
+        },
+        {
+          "value": "02",
+          "label": "02 AM"
+        },
+        {
+          "value": "03",
+          "label": "03 AM"
+        },
+        {
+          "value": "04",
+          "label": "04 AM"
+        },
+        {
+          "value": "05",
+          "label": "05 AM"
+        },
+        {
+          "value": "06",
+          "label": "06 AM"
+        },
+        {
+          "value": "07",
+          "label": "07 AM"
+        },
+        {
+          "value": "08",
+          "label": "08 AM"
+        },
+        {
+          "value": "09",
+          "label": "09 AM"
+        },
+        {
+          "value": "10",
+          "label": "10 AM"
+        },
+        {
+          "value": "11",
+          "label": "11 AM"
+        },
+        {
+          "value": "12",
+          "label": "12 PM"
+        },
+        {
+          "value": "13",
+          "label": "01 PM"
+        },
+        {
+          "value": "14",
+          "label": "02 PM"
+        },
+        {
+          "value": "15",
+          "label": "03 PM"
+        },
+        {
+          "value": "16",
+          "label": "04 PM"
+        },
+        {
+          "value": "17",
+          "label": "05 PM"
+        },
+        {
+          "value": "18",
+          "label": "06 PM"
+        },
+        {
+          "value": "19",
+          "label": "07 PM"
+        },
+        {
+          "value": "20",
+          "label": "08 PM"
+        },
+        {
+          "value": "21",
+          "label": "09 PM"
+        },
+        {
+          "value": "22",
+          "label": "10 PM"
+        },
+        {
+          "value": "23",
+          "label": "11 PM"
+        }
+      ],
+      "default": "01"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_hours",
+      "label": "t:sections.global.settings.countdown_timer_enable_hours.label",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "countdown_timer_minute",
+      "label": "t:sections.global.settings.countdown_timer_minute.label",
+      "options": [
+        {
+          "value": "00",
+          "label": "00"
+        },
+        {
+          "value": "01",
+          "label": "01"
+        },
+        {
+          "value": "02",
+          "label": "02"
+        },
+        {
+          "value": "03",
+          "label": "03"
+        },
+        {
+          "value": "04",
+          "label": "04"
+        },
+        {
+          "value": "05",
+          "label": "05"
+        },
+        {
+          "value": "06",
+          "label": "06"
+        },
+        {
+          "value": "07",
+          "label": "07"
+        },
+        {
+          "value": "08",
+          "label": "08"
+        },
+        {
+          "value": "09",
+          "label": "09"
+        },
+        {
+          "value": "10",
+          "label": "10"
+        },
+        {
+          "value": "11",
+          "label": "11"
+        },
+        {
+          "value": "12",
+          "label": "12"
+        },
+        {
+          "value": "13",
+          "label": "13"
+        },
+        {
+          "value": "14",
+          "label": "14"
+        },
+        {
+          "value": "15",
+          "label": "15"
+        },
+        {
+          "value": "16",
+          "label": "16"
+        },
+        {
+          "value": "17",
+          "label": "17"
+        },
+        {
+          "value": "18",
+          "label": "18"
+        },
+        {
+          "value": "19",
+          "label": "19"
+        },
+        {
+          "value": "20",
+          "label": "20"
+        },
+        {
+          "value": "21",
+          "label": "21"
+        },
+        {
+          "value": "22",
+          "label": "22"
+        },
+        {
+          "value": "23",
+          "label": "23"
+        },
+        {
+          "value": "24",
+          "label": "24"
+        },
+        {
+          "value": "25",
+          "label": "25"
+        },
+        {
+          "value": "26",
+          "label": "26"
+        },
+        {
+          "value": "27",
+          "label": "27"
+        },
+        {
+          "value": "28",
+          "label": "28"
+        },
+        {
+          "value": "29",
+          "label": "29"
+        },
+        {
+          "value": "30",
+          "label": "30"
+        },
+        {
+          "value": "31",
+          "label": "31"
+        },
+        {
+          "value": "32",
+          "label": "32"
+        },
+        {
+          "value": "33",
+          "label": "33"
+        },
+        {
+          "value": "34",
+          "label": "34"
+        },
+        {
+          "value": "35",
+          "label": "35"
+        },
+        {
+          "value": "36",
+          "label": "36"
+        },
+        {
+          "value": "37",
+          "label": "37"
+        },
+        {
+          "value": "38",
+          "label": "38"
+        },
+        {
+          "value": "39",
+          "label": "39"
+        },
+        {
+          "value": "40",
+          "label": "40"
+        },
+        {
+          "value": "41",
+          "label": "41"
+        },
+        {
+          "value": "42",
+          "label": "42"
+        },
+        {
+          "value": "43",
+          "label": "43"
+        },
+        {
+          "value": "44",
+          "label": "44"
+        },
+        {
+          "value": "45",
+          "label": "45"
+        },
+        {
+          "value": "46",
+          "label": "46"
+        },
+        {
+          "value": "47",
+          "label": "47"
+        },
+        {
+          "value": "48",
+          "label": "48"
+        },
+        {
+          "value": "49",
+          "label": "49"
+        },
+        {
+          "value": "50",
+          "label": "50"
+        },
+        {
+          "value": "51",
+          "label": "51"
+        },
+        {
+          "value": "52",
+          "label": "52"
+        },
+        {
+          "value": "53",
+          "label": "53"
+        },
+        {
+          "value": "54",
+          "label": "54"
+        },
+        {
+          "value": "55",
+          "label": "55"
+        },
+        {
+          "value": "56",
+          "label": "56"
+        },
+        {
+          "value": "57",
+          "label": "57"
+        },
+        {
+          "value": "58",
+          "label": "58"
+        },
+        {
+          "value": "59",
+          "label": "59"
+        }
+      ],
+      "default": "00"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_minutes",
+      "label": "t:sections.global.settings.countdown_timer_enable_minutes.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_seconds",
+      "label": "t:sections.global.settings.countdown_timer_enable_seconds.label",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.blog-articles.settings.header_button.content"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "t:sections.global.settings.button_style.label",
+      "options": [
+        {
+          "value": "button--filled",
+          "label": "t:sections.global.settings.button_style.options.filled.label"
+        },
+        {
+          "value": "button--outlined",
+          "label": "t:sections.global.settings.button_style.options.outlined.label"
+        },
+        {
+          "value": "button--outlined-inverse",
+          "label": "t:sections.global.settings.button_style.options.outlined_inverse.label"
+        },
+        {
+          "value": "default",
+          "label": "t:sections.global.settings.button_style.options.default.label"
+        }
+      ],
+      "info": "t:sections.global.settings.button_style.info",
+      "default": "button--filled"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "t:sections.countdown-timer.settings.button_text.label",
+      "default": "Shop sale"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "t:sections.countdown-timer.settings.button_url.label",
+      "default": "/collections"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.countdown-timer.name"
+    }
+  ]
+}
+{% endschema %}
