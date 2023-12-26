@@ -753,3 +753,7 @@ html.js .header__drawer > .drawer__container[open] > .drawer__content {
   left: 0;
   z-index: 1;
 }
+
+.header__drawer #Navigation-drawer-header .drawer__content .accordion__section .drawer__nav-link{
+  text-transform: uppercase;
+}
