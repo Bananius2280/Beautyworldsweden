@@ -697,7 +697,7 @@
         "gtin14": {{ variant.barcode }},
       {%- endif -%}
       "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
-      "price" : {{ variant.price | divided_by: 100.00 | json }},
+      "price" : {% if customer.id != blank %}{{ variant.price | divided_by: 100.00 | json }},{% endif %}
       "priceCurrency" : {{ cart.currency.iso_code | json }},
       "url" : {{ request.origin | append: variant.url | json }}
       }{% unless forloop.last %},{% endunless %}

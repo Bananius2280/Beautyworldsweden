@@ -33,10 +33,12 @@
 
         <form action="{{- routes.cart_url -}}" class="cart__contents" method="post" id="cart">
           <div class="cart__summary" id="cart-summary">
-            <h4 class="cart__summary-total h4">
-              <span>{{- 'cart.subtotal' | t -}}:</span>
-              <span>{{- cart.total_price | money -}}</span>
-            </h4><!-- /.cart__summary-total h4 -->
+            {% if customer.id != blank %}
+              <h4 class="cart__summary-total h4">
+                <span>{{- 'cart.subtotal' | t -}}:</span>
+                <span>{{- cart.total_price | money -}}</span>
+              </h4><!-- /.cart__summary-total h4 -->
+            {% endif %}
 
             {{ form | payment_terms }}
 

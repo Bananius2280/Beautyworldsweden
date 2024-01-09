@@ -34,6 +34,7 @@
   endif
 -%}
 
+{% if customer.id != blank %}
 <div class="price
   {%- if price_class %} {{ price_class }}{% endif -%}
   {%- if available == false %} price--sold-out {% endif -%}
@@ -184,3 +185,4 @@
     {%- endif -%}
   </div>
 </div>
+{% endif %}

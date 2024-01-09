@@ -100,10 +100,11 @@
                   <span>
                     {{- 'cart.subtotal' | t -}}:
                   </span>
-
-                  <span>
-                    {{- cart.total_price | money_with_currency -}}
-                  </span>
+                  {% if customer.id != blank %}
+                    <span>
+                      {{- cart.total_price | money_with_currency -}}
+                    </span>
+                  {% endif %}
                 </div><!-- /.cart-drawer__summary-total -->
 
                 {%- if cart.cart_level_discount_applications.size > 0 -%}
