@@ -61,7 +61,7 @@
         "logo_svg_code": "",
         "logo_width": 160,
         "logo_width_mobile": 130,
-        "footer_bottom_content_alignment": "row",
+        "footer_bottom_content_alignment": "column",
         "enable_payment_icons": true,
         "custom_payment_types": "",
         "payment_icons_color": false,

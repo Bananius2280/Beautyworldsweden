@@ -1,30 +1,50 @@
 {
   "sections": {
+    "featured_products_yY3VXz": {
+      "type": "featured-products",
+      "blocks": {
+        "collection_7dkywT": {
+          "type": "collection",
+          "settings": {
+            "products": [
+              "produkter-pa-kopet-over-2000-kr",
+              "produkter-pa-kopet-over-3500-kr",
+              "produkter-pa-kopet-over-5000-kr"
+            ],
+            "collection": "",
+            "title": "",
+            "max_products": 8,
+            "show_unavailable_products": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_7dkywT"
+      ],
+      "settings": {
+        "padding_vertical_desktop": "pt-0-desktop pb-0-desktop",
+        "padding_vertical_mobile": "pt-0-mobile pb-0-mobile",
+        "layout": "layout-2",
+        "gap_between_desktop": 40,
+        "gap_between_mobile": 2,
+        "color_scheme_text": "text-colors-default",
+        "color_scheme_background": "background-colors-accent-1",
+        "title": "Produkter på köpet",
+        "button_text": "View all",
+        "button_url": "",
+        "button_style": "button--filled"
+      }
+    },
     "main": {
       "type": "main-cart",
       "settings": {
         "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-default"
       }
-    },
-    "13608375-b086-4634-863b-df6b4d0bc7ca": {
-      "type": "product-recommendations",
-      "settings": {
-        "padding_vertical_desktop": "",
-        "padding_vertical_mobile": "",
-        "layout": "layout-1",
-        "gap_between_desktop": 2,
-        "gap_between_mobile": 2,
-        "color_scheme_text": "text-colors-default",
-        "color_scheme_background": "background-colors-accent-1",
-        "title": "You may also like",
-        "max_products": 8,
-        "show_unavailable_products": false
-      }
     }
   },
   "order": [
-    "main",
-    "13608375-b086-4634-863b-df6b4d0bc7ca"
+    "featured_products_yY3VXz",
+    "main"
   ]
 }

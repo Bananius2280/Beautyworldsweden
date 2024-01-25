@@ -71,7 +71,7 @@
       <p class="cart-item__plan">{{- line_item.selling_plan_allocation.selling_plan.name -}}</p>
     {%- endif -%}
 
-    {% if customer.id != blank %}
+{% if customer.id != blank %}
     <div class="cart-item__price">
       {% liquid
         assign original_line_price = line_item.variant.compare_at_price | times: line_item.quantity

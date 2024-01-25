@@ -177,7 +177,7 @@
               </a>
             </li><!-- /.drawer__utils-item -->
 
-            {%- if section.settings.country_drawer_navigation_menu -%}
+            {% comment %}  {%- if section.settings.country_drawer_navigation_menu -%}
               <li class="drawer__utils-item">
                 <menu-drawer class="drawer">
                   {%- render 'country-drawer' with
@@ -185,8 +185,19 @@
                     section: section,
                     append_id: 'header-drawer'
                   -%}
-                </menu-drawer><!-- /.drawer -->
-              </li><!-- /.drawer__utils-item -->
+                </menu-drawer>
+              </li>
+            {%- endif -%} {% endcomment %}
+            {%- if customer == blank -%}
+            <li class="drawer__utils-item">
+              <a
+                href="{{ routes.account_register_url }}"
+                class="drawer__utils-link h6"
+                title="{%- if customer -%}{{ 'accessibility.account' | t }}{%- else -%}{{ 'accessibility.sign_in' | t }}{%- endif -%}"
+              >    
+               Registrera
+              </a>
+            </li>
             {%- endif -%}
           </ul><!-- /.drawer__utils-items -->
         </nav><!-- /.drawer__utils -->

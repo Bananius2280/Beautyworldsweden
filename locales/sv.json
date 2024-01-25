@@ -344,7 +344,7 @@
         "sold_out": "Slutsåld",
         "unavailable": "Ej tillgänglig",
         "new": "Ny",
-        "sale": "Försäljning"
+        "sale": "REA"
       },
       "media": {
         "open_media": "Öppna media {{ index }} i modal"

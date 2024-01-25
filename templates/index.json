@@ -14,9 +14,9 @@
             "video_external": "",
             "enable_media_overlay_desktop": true,
             "video_external_mobile": "",
-            "enable_media_overlay_mobile": true,
+            "enable_media_overlay_mobile": false,
             "content_position_horizontal": "align-center text-center",
-            "content_position_vertical": "justify-end",
+            "content_position_vertical": "justify-center",
             "subtitle": "",
             "subtitle_url": "",
             "title": "Beauty World Sweden",
@@ -53,6 +53,7 @@
         },
         "8ff5c120-4c56-4512-92d9-7617774d3276": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "banner_layout": "hero-banner--full",
             "color_scheme_text": "text-colors-default",
@@ -165,7 +166,7 @@
         "color_scheme_background": "background-colors-default",
         "text_size": 1,
         "title": "Professionell hudvård shop",
-        "content": "<p>Slät, strålande och ungdomlig hud är något många kvinnor önskar sig. För att behålla skönheten måste man regelbundet ta hand om sitt ansikte och sin kropp. Ett av huvudkriterierna som påverkar effektiviteten av daglig vård är de produkter och kosmetika som används. Därför beror inte bara ens skönhet, utan också ens hälsa på ens val.<\/p><p>Vi rekommenderar att man använder professionella <a href=\"https:\/\/www.beautyworldsweden.se\/hudvard\">hud<\/a>- och <a href=\"https:\/\/www.beautyworldsweden.se\/kroppsvard\">kroppsvårdsprodukter<\/a> för att utföra <a href=\"https:\/\/www.beautyworldsweden.se\/hudvard\/yellow-rose\">Yellow Rose<\/a> ansiktsbehandlingar. Produkterna är av hög kvalité som går att köpa i vår webshop. Terapeuter kan erbjuda sina kunder att använda professionell hudvård hemma.<\/p>"
+        "content": "<p>Slät, strålande och ungdomlig hud är något många kvinnor önskar sig. För att behålla skönheten måste man regelbundet ta hand om sitt ansikte och sin kropp. Ett av huvudkriterierna som påverkar effektiviteten av daglig vård är de produkter och kosmetika som används. Därför beror inte bara ens skönhet, utan också ens hälsa på ens val.<\/p><p>Vi rekommenderar att man använder professionella <a href=\"https:\/\/www.beautyworldsweden.se\/hudvard\">hud<\/a>- och <a href=\"https:\/\/www.beautyworldsweden.se\/kroppsvard\">kroppsvårdsprodukter<\/a> för att utföra ansiktsbehandlingar. Produkterna är av hög kvalité som går att köpa i vår webshop. Terapeuter kan erbjuda sina kunder att använda professionell hudvård hemma.<\/p>"
       }
     },
     "1658994245757c7b20": {
@@ -200,6 +201,9 @@
         "8d8dee3c-2bdb-429e-9a6c-e5af884f102b",
         "191f2285-17ae-4c89-b5ef-afc9a25c80b3"
       ],
+      "custom_css": [
+        "h6 {font-size: 1.6rem;}"
+      ],
       "settings": {
         "padding_vertical_desktop": "",
         "padding_vertical_mobile": "",
@@ -209,7 +213,7 @@
         "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-default",
         "title": "Populära produkter",
-        "button_text": "View all",
+        "button_text": "Visa alla",
         "button_url": "shopify:\/\/collections",
         "button_style": "button--outlined"
       }
@@ -372,13 +376,13 @@
             "video_mobile_compact": false,
             "content_position_horizontal": "text-center align-center",
             "content_position_vertical": "justify-center",
-            "title": "EXKLUSIV DISTRIBUTION",
+            "title": "MPT HIFU NYHET 2023",
             "text_size": 2.5,
-            "content": "<h3>RF MICRONEEDLING-MASKIN<\/h3><p>Radiofrekvens Microneedling är en nyaste microneedling maskin och har den senaste tekniken för maximal kontroll. Nålarna har förbättring i sin utseende och funktion. Detta gör att du kan nå önskade resultat över hela kroppen!<\/p>",
+            "content": "<p>Det är fokuserad ultraljud som levererar energi till behandlingsdjuphet med 25 gånger finare 417 st koagulerings punkter - TCP (Thermal Coagulated Point) inom 25 mm behandlings längd.<\/p>",
             "button_style": "button--filled",
             "button_separator": false,
             "button_text": "Кöp",
-            "button_url": "shopify:\/\/collections\/utbildning",
+            "button_url": "shopify:\/\/products\/nyhet-2023-mpt-hifu-med-senaste-mpt-generation-teknik-1274",
             "content_layout": "content--relative",
             "block_margin_left": 0,
             "block_margin_right": 0,
@@ -393,7 +397,7 @@
           "settings": {
             "color_scheme_text": "text-colors-default",
             "color_scheme_background": "background-colors-accent-1",
-            "image_desktop": "shopify:\/\/shop_images\/RFMicroneedling_f5d59ec1-62a4-43d3-87f8-f35168d415a4.png",
+            "video_desktop": "shopify:\/\/files\/videos\/MPT HIFU NYHET 2023.mp4",
             "video_desktop_external": "",
             "video_desktop_aspect_ratio": "16\/9",
             "placeholder_svg_code": "",
@@ -428,11 +432,11 @@
         "section_height": 65,
         "layout": "section-dual-tiles--50-50",
         "gap_between_tiles": 3.2,
-        "gap_between_tiles_mobile": 0.2,
+        "gap_between_tiles_mobile": 0,
         "spacing_top_desktop": 6,
         "spacing_bottom_desktop": 6,
-        "spacing_top_mobile": 6,
-        "spacing_bottom_mobile": 6
+        "spacing_top_mobile": 1,
+        "spacing_bottom_mobile": 0
       }
     },
     "14bc8a62-0495-49fc-9048-cfc22c66262a": {
@@ -442,7 +446,7 @@
           "type": "image-before-slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_1468.jpg",
-            "title": "Innan",
+            "title": "Före",
             "color_title": "#ffffff"
           }
         },
@@ -460,7 +464,7 @@
         "template--21452329091365__14bc8a62-0495-49fc-9048-cfc22c66262a-image-after-slide-1"
       ],
       "settings": {
-        "title": "INNAN \/ EFTER",
+        "title": "Före \/ EFTER",
         "content": "Att regelbundet sköta om huden i ansiktet hjälper till att bekämpa akne och bibehålla dess renhet och hälsa",
         "layout": "section_slider_layout--full",
         "color_scheme_text": "text-colors-default",
@@ -496,6 +500,7 @@
         "template--16809880650043__ff1b88c1-7f9a-42ed-a737-5ce178874c08-1667844595b40c7541-0",
         "e7c7b6cf-a68b-409a-b328-07dd47892940"
       ],
+      "disabled": true,
       "settings": {
         "padding_vertical_desktop": "pt-0-desktop pb-0-desktop",
         "padding_vertical_mobile": "pt-0-mobile pb-0-mobile",
@@ -575,6 +580,7 @@
         "template--16809880650043__90f0172d-db82-4963-95c4-6a1724783cd8-16677286337545964d-0",
         "template--16809880650043__90f0172d-db82-4963-95c4-6a1724783cd8-16677286337545964d-2"
       ],
+      "disabled": true,
       "settings": {
         "slider_mobile": true,
         "layout": "layout-1",
@@ -582,30 +588,36 @@
         "padding_vertical_mobile": "pt-0-mobile pb-0-mobile"
       }
     },
-    "c6900f23-1eaa-4fc2-a4c6-bf9ef3cfc2ca": {
-      "type": "hero-banner",
+    "blog_articles_QFKNjk": {
+      "type": "blog-articles",
       "settings": {
-        "slider_height": 100,
-        "slider_autoplay": false,
-        "slider_autoplay_interval": 6,
-        "slider_arrows": false,
-        "slider_arrows_position": "hero__swiper-buttons--sides",
-        "slider_arrows_color": "text-colors-inverse"
+        "padding_vertical_desktop": "pt-0-desktop pb-0-desktop",
+        "padding_vertical_mobile": "pt-0-mobile pb-0-mobile",
+        "layout": "layout-1",
+        "gap_between_desktop": 2,
+        "gap_between_mobile": 2,
+        "content_alignment": "text-center",
+        "color_scheme_text": "color-text-primary",
+        "color_scheme_background": "color-background-accent-1",
+        "heading": "Blogg",
+        "button_style": "button--filled",
+        "button_text": "Besök blogg",
+        "blog": "news"
       }
     },
     "878e1659-6f26-4cb1-beb3-222e6c3ba8f5": {
       "type": "seo-content",
       "custom_css": [
-        ".entry {text-align: justify;}"
+        ".entry {text-align: justify; margin: 2em;}"
       ],
       "settings": {
         "padding_vertical_desktop": "",
-        "padding_vertical_mobile": "pb-0-mobile",
+        "padding_vertical_mobile": "pt-0-mobile pb-0-mobile",
         "color_scheme_text": "text-colors-default",
         "color_scheme_background": "background-colors-default",
         "text_size": 1,
         "title": "Vad vi erbjuder våra kunder",
-        "content": "<p>Beauty World Sweden - professionell hudvård shop i Stockholm som tar hand om din skönhet. Högkvalitativa produkter och <a href=\"https:\/\/www.beautyworldsweden.se\/maskiner\">utrustning<\/a> på kosmetikamarknaden, högkvalitativ eftermarknadsservice, konkurrenskraftiga priser inom alla kategorier av varor, vilket har resulterat i återkommande kunder och goda referenser.<\/p><p>Vår professionell hudvård shop erbjuder ett brett och varierat utbud av produkter:<\/p><ol><li><a href=\"https:\/\/www.beautyworldsweden.se\/hudvard\">Skötselprodukter och microneedling<\/a>. <a href=\"https:\/\/www.beautyworldsweden.se\/hudvard\/mask\">Masker<\/a>, <a href=\"https:\/\/www.beautyworldsweden.se\/hudvard\/serum-ampull\">serum<\/a>, <a href=\"https:\/\/www.beautyworldsweden.se\/hudvard\/kram\">krämer<\/a>, <a href=\"https:\/\/www.beautyworldsweden.se\/hudvard\/rengoring-ansiktsvatten\">rengöring<\/a>, <a href=\"https:\/\/www.beautyworldsweden.se\/hudvard\/peeling\">peeling<\/a>, detta är bara en liten del av det som presenteras i vår webshop . Vi erbjuder även ett brett utbud av <a href=\"https:\/\/www.beautyworldsweden.se\/hudvard\/akne-hud\">produkter för problem- och aknehy<\/a>. I sortimentet kan du välja de lämpligaste ansikts- och <a href=\"https:\/\/www.beautyworldsweden.se\/hudvard\">hudvårdsprodukter<\/a>, utifrån personliga krav och önskemål.<\/li><li><a href=\"https:\/\/www.beautyworldsweden.se\/micropigmentering\">Microblading verktyg<\/a>. Du kan köpa <a href=\"https:\/\/www.beautyworldsweden.se\/micropigmentering\/apparater\">maskiner<\/a>, <a href=\"https:\/\/www.beautyworldsweden.se\/micropigmentering\/pigmenter\">pigment<\/a>, <a href=\"https:\/\/www.beautyworldsweden.se\/micropigmentering\/nalar\">nålar<\/a> och <a href=\"https:\/\/www.beautyworldsweden.se\/micropigmentering\/tillbehor\">tillbehör<\/a> från Goldeneye som är av tyskt fabrikat och som har funnits i över 20 år på marknaden, och mycket mer för professionell kosmetiskpigmentering . Alla produkter är certifierade och uppfyller senaste lagkraven från Läkemedelsverket.<\/li><li><a href=\"https:\/\/www.beautyworldsweden.se\/fransar\">Produkter för ögonfransförlängning och Lash lift<\/a>. I vårt sortiment hittar du ett brett urval av <a href=\"https:\/\/www.beautyworldsweden.se\/fransar\/vg-lashes\">lösögonfransar<\/a> i olika längder och tjocklekar. I webbutiken finns professionella verktyg för ögonfransförlängning och <a href=\"https:\/\/www.beautyworldsweden.se\/fransar\/lash-lift\">Lash lift<\/a>, förbrukningsmaterial och <a href=\"https:\/\/www.beautyworldsweden.se\/fransar\/tillbehor\">tillbehör<\/a>.<\/li><li><a href=\"https:\/\/www.beautyworldsweden.se\/maskiner\">Salongutrustning<\/a>. Hos Beauty World Sweden, en professionell hudvårdsbutik, kan du köpa allt du behöver för att starta din egen skönhetssalong. Vi har ett brett utbud av professionell utrustning och förbrukningsvaror från världsledande varumärken i branschen.<\/li><\/ol>"
+        "content": "<p>Beauty World Sweden - professionell hudvård shop i Stockholm som tar hand om din skönhet. Högkvalitativa produkter och utrustning på kosmetikamarknaden, högkvalitativ eftermarknadsservice, konkurrenskraftiga priser inom alla kategorier av varor, vilket har resulterat i återkommande kunder och goda referenser.Vår professionell hudvård shop erbjuder ett brett och varierat utbud av produkter:Skötselprodukter och microneedling. Masker, serum, krämer, rengöring, peeling, detta är bara en liten del av det som presenteras i vår webshop . Vi erbjuder även ett brett utbud av produkter för problem- och aknehy. I sortimentet kan du välja de lämpligaste ansikts- och hudvårdsprodukter, utifrån personliga krav och önskemål.Microblading verktyg. Du kan köpa maskiner, pigment, nålar och tillbehör från Goldeneye som är av tyskt fabrikat och som har funnits i över 25 år på marknaden, och mycket mer för professionell kosmetisk pigmentering . Alla produkter är certifierade och uppfyller senaste lagkraven från Läkemedelsverket.Produkter för ögonfransförlängning och Lash lift. I vårt sortiment hittar du ett brett urval av lösögonfransar i olika längder och tjocklekar. I webbutiken finns professionella verktyg för ögonfransförlängning och Lash lift, förbrukningsmaterial och tillbehör.Salongutrustning. Hos Beauty World Sweden, en professionell hudvårdsbutik, kan du köpa allt du behöver för att starta din egen skönhetssalong. Vi har ett brett utbud av professionell utrustning och förbrukningsvaror från världsledande varumärken i branschen.<\/p>"
       }
     },
     "2cbbb58e-b5d1-45dc-8a66-72bf21c3aabd": {
@@ -663,7 +675,7 @@
     "ff1b88c1-7f9a-42ed-a737-5ce178874c08",
     "b9e1f375-bbe3-49e0-b449-eff934bd3497",
     "90f0172d-db82-4963-95c4-6a1724783cd8",
-    "c6900f23-1eaa-4fc2-a4c6-bf9ef3cfc2ca",
+    "blog_articles_QFKNjk",
     "878e1659-6f26-4cb1-beb3-222e6c3ba8f5",
     "2cbbb58e-b5d1-45dc-8a66-72bf21c3aabd"
   ]

@@ -1,12 +1,12 @@
 {
   "current": {
-    "type_heading_font": "caslon_bold_n4",
+    "type_heading_font": "americana_n4",
     "heading_font_scale": 80,
     "heading_letter_spacing": "0",
     "heading_text_transform": "uppercase",
-    "type_body_font": "libre_baskerville_n4",
-    "body_font_scale": 100,
-    "type_button_font": "harmonia_sans_n4",
+    "type_body_font": "arimo_n4",
+    "body_font_scale": 110,
+    "type_button_font": "americana_n4",
     "color_heading_text": "#111111",
     "color_body_text": "#000000",
     "color_text_primary": "#111111",
@@ -28,13 +28,13 @@
     "color_link": "#000000",
     "color_tags": "#111111",
     "color_progressbar": "#CD9B77",
-    "color_image_background": "#c8c8c8",
+    "color_image_background": "#ebebeb",
     "color_popup_background": "#FFFFFF",
     "color_border_elements": "#E6E2E1",
-    "color_tag_text": "#000000",
-    "color_tag_background": "#cdbcb0",
+    "color_tag_text": "#fff",
+    "color_tag_background": "#c10000",
     "product_swatches_on_card": true,
-    "quick_add_to_cart": "no_button",
+    "quick_add_to_cart": "with_variant",
     "sizes_option": "",
     "card_product_layout": "card-product__layout--standard",
     "card_product_image_ratio": "100%",
@@ -52,11 +52,11 @@
     "social_instagram_link": "https:\/\/www.instagram.com\/victoriagrepo_akademin\/",
     "social_twitter_link": "",
     "social_linkedin_link": "",
-    "social_youtube_link": "",
+    "social_youtube_link": "https:\/\/youtube.com\/@victoriagrepoakademin.6785?si=HxiXBAzntm_V74_u",
     "social_vimeo_link": "",
-    "social_tiktok_link": "https:\/\/www.tiktok.com\/@victoriagrepo_akademin?_t=8i9TUidgKXN&_r=1",
+    "social_tiktok_link": "https:\/\/www.tiktok.com\/@victoriagrepo_akademin",
     "social_pinterest_link": "",
-    "social_facebook_link": "https:\/\/www.facebook.com\/VGAkademin\/",
+    "social_facebook_link": "https:\/\/www.facebook.com\/beautyworldsweden",
     "social_snapchat_link": "",
     "social_tumblr_link": "",
     "share_twitter": false,
@@ -64,18 +64,20 @@
     "share_linkedin": false,
     "share_instagram": true,
     "share_facebook": true,
-    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "favicon": "shopify:\/\/shop_images\/Favicon_victoria.svg",
     "show_country_drawer_title": true,
     "show_country_drawer_content": true,
     "predictive_search_enabled": true,
     "predictive_search_column_gap_desktop": 0.2,
     "predictive_search_column_gap_mobile": 0.2,
     "enable_shipping_notification": true,
-    "shipping_notification_threshold": "150",
+    "shipping_notification_threshold": "2000",
     "cart_terms": "<p>Agree to <a href=\"\/policies\/terms-of-service\" target=\"_blank\" title=\"Terms of Service\">terms<\/a> of sale as per the merchants terms of service.<\/p>",
-    "enable_dynamic_checkout": true,
+    "enable_cart_terms": false,
+    "enable_dynamic_checkout": false,
     "enable_cart_upsell": true,
-    "cart_upsell_title": "Complete the set",
+    "cart_upsell_title": "Produkter på köpet",
+    "enable_cart_note": false,
     "enable_breadcrumbs_on_other_pages": true,
     "enable_back_to_top_button": true,
     "theme_style_name": "sahara",
@@ -84,9 +86,11 @@
     "image_snippet": "native",
     "max_image_url_width": "1",
     "disable_animations_on_mobile": false,
+    "checkout_logo_image": "shopify:\/\/shop_images\/BWS_f67cce06-c42f-4c4a-a98f-ecff934cd12e.svg",
+    "checkout_logo_position": "center",
     "checkout_accent_color": "#000000",
     "checkout_button_color": "#000000",
-    "checkout_layout": "onepage",
+    "checkout_layout": "threepage",
     "enable_cart_notes": true,
     "sections": {
       "announcement-bar": {
@@ -287,16 +291,19 @@
       },
       "newsletter-popup": {
         "type": "newsletter-popup",
+        "custom_css": [
+          ".newsletter-popup__content {text-align: justify;}"
+        ],
         "settings": {
           "disable_section": false,
-          "customizer_visible": false,
+          "customizer_visible": true,
           "color_scheme_text": "text-colors-primary",
           "color_scheme_background": "background-colors-default",
           "delay": 10,
           "image": "shopify:\/\/shop_images\/foundation.jpg",
-          "title": "Enjoy 10% off your first order.",
-          "content": "Sign up to join the club and get 10% off your purchase! Our selection of products is vast and offers something for everyone. Shop now and save.",
-          "button_close_text": "No thanks"
+          "title": "NJUT AV 10% RABATT PÅ DIN FÖRSTA BESTÄLLNING",
+          "content": "1. FÖLJ OSS PÅ INSTAGRAM\n2. SIGNA UPP FÖR VÅRT NYHETSBREV\n\nErbjudanden kommer löpande att skickas ut till\nde som prenumererat. Genom att fylla i din mailadress godkänner du att ta del av nyhetsbrev",
+          "button_close_text": "Inga tack"
         }
       },
       "main-password-header": {
@@ -313,7 +320,7 @@
       "cart-drawer": {
         "type": "cart-drawer",
         "settings": {
-          "color_scheme_text": "text-colors-primary",
+          "color_scheme_text": "text-colors-default",
           "color_scheme_background": "background-colors-default"
         }
       },
@@ -336,7 +343,41 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "14710238943034738919": {
+        "type": "shopify:\/\/apps\/air-product-reviews\/blocks\/app-embed\/c4e1e9ca-4d46-4e76-bc39-7e42417cb327",
+        "disabled": false,
+        "settings": {
+          "air_reviews_json_ld": "{\n    \"@context\": \"http:\/\/schema.org\",\n    \"@type\": \"Product\",\n    \"name\": {{ product.title | json }},\n    \"aggregateRating\": {\n      \"@type\": \"AggregateRating\",\n      \"ratingValue\": {{  product.metafields.reviews.rating.value.rating |  json }},\n      \"reviewCount\": {{ product.metafields.reviews.rating_count |  json }}\n    }\n}"
+        }
+      },
+      "12198985164985445843": {
+        "type": "shopify:\/\/apps\/nova-eu-cookie-bar-gdpr\/blocks\/app-embed\/6667ecbd-70cf-4527-84a9-e6037e6ca706",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "6810535121229352664": {
+        "type": "shopify:\/\/apps\/monster-cart-upsell-free-gifts\/blocks\/app-embed\/a1b8e58a-bf1d-4e0f-8768-a387c3f643c0",
+        "disabled": true,
+        "settings": {
+          "markets_rounding": false,
+          "send_gtag_atc": false,
+          "disable_tiktok_tracking": false,
+          "disable_klaviyo_tracking": false,
+          "stop_cart_page": false,
+          "apply_discount_before_checkout": false,
+          "bag_selector": "",
+          "hide_when_opened": "",
+          "show_item_properties": false,
+          "stop_shopify_rate": false,
+          "dev_mode": false,
+          "beta_version": false,
+          "custom_code": "<script>\n    \/\/ custom code here\n<\/script>"
+        }
+      }
+    }
   },
   "presets": {
     "Sahara": {

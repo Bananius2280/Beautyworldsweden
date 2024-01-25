@@ -42,8 +42,6 @@
   {%- if product_ref.price_varies == false and product_ref.compare_at_price_varies %} price--no-compare{% endif -%}
   {%- if show_badges %} price--show-badge{% endif -%}
 ">
-
-
   <div class="price__container">
     {%- if product_ref -%}
       {%- if target == product_ref and product_ref.price_varies -%}

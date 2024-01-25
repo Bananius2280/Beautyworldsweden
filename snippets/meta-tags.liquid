@@ -30,8 +30,8 @@
 
 {%- if request.page_type == 'product' -%}
   {% if customer.id != blank %}
-  <meta property="og:price:amount" content="{{ product.price | money_without_currency | strip_html }}">
-  <meta property="og:price:currency" content="{{ cart.currency.iso_code }}">
+    <meta property="og:price:amount" content="{{ product.price | money_without_currency | strip_html }}">
+    <meta property="og:price:currency" content="{{ cart.currency.iso_code }}">
   {% endif %}
 {%- endif -%}
 

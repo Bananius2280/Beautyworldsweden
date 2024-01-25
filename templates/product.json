@@ -8,6 +8,11 @@
           "settings": {
           }
         },
+        "93b07f77-7679-47eb-a1c7-652654f73645": {
+          "type": "shopify:\/\/apps\/air-product-reviews\/blocks\/app-summary-block\/c4e1e9ca-4d46-4e76-bc39-7e42417cb327",
+          "settings": {
+          }
+        },
         "3f3ee0d5-7273-4d98-b261-fa9f30e98a4c": {
           "type": "content_tabs",
           "settings": {
@@ -46,7 +51,7 @@
         "1ad0121e-439d-45c0-b45d-4f080836ade5": {
           "type": "text",
           "settings": {
-            "text": "För att beställa och se priser måste ni först registrera er så kommer er konto godkännas inom 24 timmar. Webshop är för företag och personer som har dokumenterat utbildning inom område",
+            "text": "För att beställa och se priser måste ni först registrera er. Webshop är för företag och personer som har dokumenterat utbildning inom område",
             "text_style": "body",
             "link_to_resource": "none"
           }
@@ -77,8 +82,8 @@
         "e6d841d6-2f71-40b3-956a-912df13f9f6e": {
           "type": "inventory_notice",
           "settings": {
-            "inventory_threshold": 15,
-            "notice_just_text": false
+            "inventory_threshold": 3,
+            "notice_just_text": true
           }
         },
         "7be6b89c-da83-4ff2-9b85-44fb28cbfa27": {
@@ -124,6 +129,7 @@
       },
       "block_order": [
         "1e0c79e9-7de0-4eee-b9c5-f27132635fb8",
+        "93b07f77-7679-47eb-a1c7-652654f73645",
         "3f3ee0d5-7273-4d98-b261-fa9f30e98a4c",
         "8effeb43-55b7-4ec4-ab9b-68bcd89b865b",
         "1ad0121e-439d-45c0-b45d-4f080836ade5",
@@ -135,10 +141,13 @@
         "9d6b79cd-69fe-4ff9-838b-fda672477351",
         "c8927b57-257c-4256-98ea-887462fdd0cd"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "section_width": "container",
         "product_media_layout": "product__media-layout--full",
-        "slides_with_thumbs": "desktop_and_mobile",
+        "slides_with_thumbs": "none",
         "image_vertical_alignment": "center",
         "product_media_object_fit": "cover",
         "adaptive_ratio_and_auto_height": "slider_auto_height",
@@ -146,86 +155,32 @@
         "padding_vertical_desktop": "pt-0-desktop pb-0-desktop",
         "padding_vertical_mobile": "pt-0-mobile pb-0-mobile",
         "breadcrumbs_color_scheme_text": "text-colors-default",
-        "tags_color_scheme_text": "text-colors-default",
+        "tags_color_scheme_text": "text-colors-inverse",
         "arrows_color": "text-colors-default",
         "show_tags_on_mobile": true,
         "enable_actions_bar": true,
         "horizontal_alignment": "text-left"
       }
     },
-    "977cac03-4044-4567-8907-fa55103a47eb": {
-      "type": "complete-the-set",
+    "1704814718be962d3a": {
+      "type": "apps",
       "blocks": {
-        "fec25a48-cc42-4f7d-bbf5-215567a945e9": {
-          "type": "popup-drawer",
+        "5edb04b3-ed71-4ec3-acd0-9d16ced4dfa5": {
+          "type": "shopify:\/\/apps\/air-product-reviews\/blocks\/app-block-review-list\/c4e1e9ca-4d46-4e76-bc39-7e42417cb327",
           "settings": {
-            "button_text": "Beskrivning",
-            "button_type": "drawer",
-            "button_url": "",
-            "drawer_richtext": "<p>[description]<\/p>",
-            "drawer_page": ""
-          }
-        },
-        "4f41f466-653b-4675-91c2-051a7830a3cc": {
-          "type": "popup-drawer",
-          "settings": {
-            "button_text": "{{ product.metafields.custom.ingredients.value }}",
-            "button_type": "drawer",
-            "button_url": "",
-            "drawer_richtext": "<p>{{ product.metafields.custom.egenskaper | metafield_tag }}<\/p>",
-            "drawer_page": ""
-          }
-        },
-        "ab4932da-0d31-4117-a170-3d12f59976ca": {
-          "type": "popup-drawer",
-          "settings": {
-            "button_text": "Contact us",
-            "button_type": "link",
-            "button_url": "shopify:\/\/pages\/contact-us",
-            "drawer_richtext": "",
-            "drawer_page": ""
-          }
-        },
-        "f9d768f7-b69b-4425-b3d7-33216740b2dd": {
-          "type": "popup-drawer",
-          "disabled": true,
-          "settings": {
-            "button_text": "Stylist tip",
-            "button_type": "drawer",
-            "button_url": "",
-            "drawer_richtext": "<p>Stylist tips can be entered here.<\/p>",
-            "drawer_page": ""
-          }
-        },
-        "94d964a1-0d79-4544-8288-24863da87e2d": {
-          "type": "popup-drawer",
-          "disabled": true,
-          "settings": {
-            "button_text": "Model Measurments",
-            "button_type": "link",
-            "button_url": "",
-            "drawer_richtext": "<p>Model measurements can be inserted here.<\/p>",
-            "drawer_page": ""
+            "air_blockreviews_summaryHeading": "Recensioner",
+            "air_blockreviews_layout": "list",
+            "air_blockreviews_singleStarColor": "#ffd700",
+            "air_blockreviews_primaryColor": "#121212",
+            "air_blockreviews_buttonBackgroundColor": "#ededed",
+            "air_blockreviews_buttonTextColor": "#121212"
           }
         }
       },
       "block_order": [
-        "fec25a48-cc42-4f7d-bbf5-215567a945e9",
-        "4f41f466-653b-4675-91c2-051a7830a3cc",
-        "ab4932da-0d31-4117-a170-3d12f59976ca",
-        "f9d768f7-b69b-4425-b3d7-33216740b2dd",
-        "94d964a1-0d79-4544-8288-24863da87e2d"
+        "5edb04b3-ed71-4ec3-acd0-9d16ced4dfa5"
       ],
-      "disabled": true,
       "settings": {
-        "padding_vertical_desktop": "pt-0-desktop pb-0-desktop",
-        "padding_vertical_mobile": "",
-        "color_scheme_text": "text-colors-default",
-        "color_scheme_background": "background-colors-default",
-        "title": "Complete the set",
-        "content_type": "products",
-        "flip_desktop": false,
-        "flip_mobile": true
       }
     },
     "recommendations": {
@@ -260,18 +215,12 @@
         "max_products": 8,
         "show_unavailable_products": false
       }
-    },
-    "166904322806a89075": {
-      "type": "apps",
-      "settings": {
-      }
     }
   },
   "order": [
     "main",
-    "977cac03-4044-4567-8907-fa55103a47eb",
+    "1704814718be962d3a",
     "recommendations",
-    "recently_viewed",
-    "166904322806a89075"
+    "recently_viewed"
   ]
 }

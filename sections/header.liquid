@@ -359,21 +359,28 @@
           <ul class="header__utils-items list-unstyled">
             @@additional_links_placeholder@@
 
-            <li class="header__utils-item small-hide medium-hide">
-              {%- render 'search-drawer', append_id: 'header' -%}
-            </li><!-- /.header__utils-item -->
-
             {%- if shop.customer_accounts_enabled -%}
               <li class="header__utils-item">
                 <a
                   href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
                   class="header__utils-link svg-color-inherit"
-                  title="{%- if customer -%}{{ 'accessibility.account' | t }}{%- else -%}{{ 'accessibility.sign_in' | t }}{%- endif -%}"
+                  title="{%- if customer -%}{{ 'accessibility.account' | t }}{%- else -%}{{ 'accessibility.sign_in' | t }}{%- endif -%}" style="font-family: var(--font-heading-family);
+    font-size: var(--font-size-static-medium);
+    line-height: 1.15;width: max-content;"
                 >
-                  {%- render 'icon-user' -%}
+                  <!-- {%- render 'icon-user' -%} -->
+                  {%- if customer -%}
+                    KONTO
+                  {%- else -%}
+                    LOGGA IN
+                  {%- endif -%}
                 </a>
               </li><!-- /.header__utils-item -->
             {%- endif -%}
+
+            <li class="header__utils-item small-hide medium-hide">
+              {%- render 'search-drawer', append_id: 'header' -%}
+            </li><!-- /.header__utils-item -->
 
             <li class="header__utils-item header__utils-item--cart">
               <a

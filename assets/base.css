@@ -3023,21 +3023,3 @@ html.js .animation-none {
     border-color: var(--color-button-filled-background);
   }
 }
-
-@media screen and (max-width: 750px) {
-  .section-seo-content .section-seo-content__inner .section-seo-content__content .entry ol li a {
-    display: inline-block;
-  }
-
-  .section-testimonials .swiper .swiper-wrapper {
-    flex-wrap: wrap;
-  }
-
-  .section-testimonials .swiper .swiper-wrapper .swiper-slide {
-    width: 100% !important;
-  }
-
-  .section-seo-content .section-seo-content__inner .section-seo-content__content .entry ol {
-    padding: 13px;
-  }
-}
